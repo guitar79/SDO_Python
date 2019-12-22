@@ -1077,3 +1077,83 @@
 2019-12-22 14:42:17.181611: ../DSO_lists/SDO_filelist_20100911.txt is created
 2019-12-22 14:42:19.752732: ../DSO_lists/SDO_filelist_20100912.txt is created
 2019-12-22 14:42:21.418276: ../DSO_lists/SDO_filelist_20100913.txt is created
+2019-12-22 14:42:24.003361: ../DSO_lists/SDO_filelist_20100914.txt is created
+2019-12-22 14:42:25.581138: ../DSO_lists/SDO_filelist_20100915.txt is created
+2019-12-22 14:42:29.246332: ../DSO_lists/SDO_filelist_20100916.txt is created
+2019-12-22 14:42:31.039534: ../DSO_lists/SDO_filelist_20100917.txt is created
+2019-12-22 14:42:34.112313: ../DSO_lists/SDO_filelist_20100918.txt is created
+2019-12-22 14:42:36.002256: ../DSO_lists/SDO_filelist_20100919.txt is created
+2019-12-22 14:42:37.489277: ../DSO_lists/SDO_filelist_20100920.txt is created
+2019-12-22 14:42:41.318546: ../DSO_lists/SDO_filelist_20100921.txt is created
+2019-12-22 14:42:43.573513: ../DSO_lists/SDO_filelist_20100922.txt is created
+2019-12-22 14:42:47.304532: ../DSO_lists/SDO_filelist_20100923.txt is created
+2019-12-22 14:42:49.022933: ../DSO_lists/SDO_filelist_20100924.txt is created
+2019-12-22 14:42:51.002637: ../DSO_lists/SDO_filelist_20100925.txt is created
+2019-12-22 14:42:54.721203: ../DSO_lists/SDO_filelist_20100926.txt is created
+2019-12-22 14:42:59.255645: ../DSO_lists/SDO_filelist_20100927.txt is created
+2019-12-22 14:43:01.591392: ../DSO_lists/SDO_filelist_20100928.txt is created
+2019-12-22 14:43:05.789163: ../DSO_lists/SDO_filelist_20100929.txt is created
+2019-12-22 14:43:09.550097: ../DSO_lists/SDO_filelist_20100930.txt is created
+2019-12-22 14:43:13.089627: ../DSO_lists/SDO_filelist_20101001.txt is created
+2019-12-22 14:43:16.573306: ../DSO_lists/SDO_filelist_20101002.txt is created
+2019-12-22 14:43:20.135775: ../DSO_lists/SDO_filelist_20101003.txt is created
+2019-12-22 14:43:24.252761: ../DSO_lists/SDO_filelist_20101004.txt is created
+2019-12-22 14:43:26.660318: ../DSO_lists/SDO_filelist_20101005.txt is created
+2019-12-22 14:43:29.045938: ../DSO_lists/SDO_filelist_20101006.txt is created
+2019-12-22 14:43:30.579833: ../DSO_lists/SDO_filelist_20101007.txt is created
+2019-12-22 14:43:32.325164: ../DSO_lists/SDO_filelist_20101008.txt is created
+2019-12-22 14:43:35.713099: ../DSO_lists/SDO_filelist_20101009.txt is created
+2019-12-22 14:43:39.147908: ../DSO_lists/SDO_filelist_20101010.txt is created
+2019-12-22 14:43:42.586707: ../DSO_lists/SDO_filelist_20101011.txt is created
+2019-12-22 14:43:45.844989: ../DSO_lists/SDO_filelist_20101012.txt is created
+2019-12-22 14:43:48.573689: ../DSO_lists/SDO_filelist_20101013.txt is created
+2019-12-22 14:43:52.063352: ../DSO_lists/SDO_filelist_20101014.txt is created
+2019-12-22 14:43:53.525441: ../DSO_lists/SDO_filelist_20101015.txt is created
+2019-12-22 14:43:55.031411: ../DSO_lists/SDO_filelist_20101016.txt is created
+2019-12-22 14:43:58.535037: ../DSO_lists/SDO_filelist_20101017.txt is created
+2019-12-22 14:44:02.142385: ../DSO_lists/SDO_filelist_20101018.txt is created
+2019-12-22 14:44:04.932920: ../DSO_lists/SDO_filelist_20101019.txt is created
+2019-12-22 14:44:06.851790: ../DSO_lists/SDO_filelist_20101020.txt is created
+2019-12-22 14:44:08.480428: ../DSO_lists/SDO_filelist_20101021.txt is created
+2019-12-22 14:44:10.454148: ../DSO_lists/SDO_filelist_20101022.txt is created
+2019-12-22 14:44:13.794211: ../DSO_lists/SDO_filelist_20101023.txt is created
+2019-12-22 14:44:15.922516: ../DSO_lists/SDO_filelist_20101024.txt is created
+2019-12-22 14:44:17.679332: ../DSO_lists/SDO_filelist_20101025.txt is created
+2019-12-22 14:44:19.209239: ../DSO_lists/SDO_filelist_20101026.txt is created
+2019-12-22 14:44:21.025381: ../DSO_lists/SDO_filelist_20101027.txt is created
+2019-12-22 14:44:22.523371: ../DSO_lists/SDO_filelist_20101028.txt is created
+2019-12-22 14:44:24.331533: ../DSO_lists/SDO_filelist_20101029.txt is created
+2019-12-22 14:44:27.603778: ../DSO_lists/SDO_filelist_20101030.txt is created
+2019-12-22 14:44:29.835806: ../DSO_lists/SDO_filelist_20101031.txt is created
+2019-12-22 14:44:32.039909: ../DSO_lists/SDO_filelist_20101101.txt is created
+2019-12-22 14:44:35.111690: ../DSO_lists/SDO_filelist_20101102.txt is created
+2019-12-22 14:44:36.138943: HTTP Error 404: Not Found, https://sdo.gsfc.nasa.gov/assets/img/browse/2010/11/03/
+
+2019-12-22 14:44:37.172177: HTTP Error 404: Not Found, https://sdo.gsfc.nasa.gov/assets/img/browse/2010/11/04/
+
+2019-12-22 14:44:39.314446: ../DSO_lists/SDO_filelist_20101105.txt is created
+2019-12-22 14:44:42.641545: ../DSO_lists/SDO_filelist_20101106.txt is created
+2019-12-22 14:44:44.221317: ../DSO_lists/SDO_filelist_20101107.txt is created
+2019-12-22 14:44:47.677071: ../DSO_lists/SDO_filelist_20101108.txt is created
+2019-12-22 14:44:49.522135: ../DSO_lists/SDO_filelist_20101109.txt is created
+2019-12-22 14:44:51.316335: ../DSO_lists/SDO_filelist_20101110.txt is created
+2019-12-22 14:44:53.205281: ../DSO_lists/SDO_filelist_20101111.txt is created
+2019-12-22 14:44:55.977863: ../DSO_lists/SDO_filelist_20101112.txt is created
+2019-12-22 14:44:58.711548: ../DSO_lists/SDO_filelist_20101113.txt is created
+2019-12-22 14:45:00.583540: ../DSO_lists/SDO_filelist_20101114.txt is created
+2019-12-22 14:45:01.672627: HTTP Error 404: Not Found, https://sdo.gsfc.nasa.gov/assets/img/browse/2010/11/15/
+
+2019-12-22 14:45:03.484778: ../DSO_lists/SDO_filelist_20101116.txt is created
+2019-12-22 14:45:04.576856: HTTP Error 404: Not Found, https://sdo.gsfc.nasa.gov/assets/img/browse/2010/11/17/
+
+2019-12-22 14:45:08.107409: ../DSO_lists/SDO_filelist_20101118.txt is created
+2019-12-22 14:45:09.125685: HTTP Error 404: Not Found, https://sdo.gsfc.nasa.gov/assets/img/browse/2010/11/19/
+
+2019-12-22 14:45:11.865355: ../DSO_lists/SDO_filelist_20101120.txt is created
+2019-12-22 14:45:13.361354: ../DSO_lists/SDO_filelist_20101121.txt is created
+2019-12-22 14:45:14.848374: ../DSO_lists/SDO_filelist_20101122.txt is created
+2019-12-22 14:45:15.981342: HTTP Error 404: Not Found, https://sdo.gsfc.nasa.gov/assets/img/browse/2010/11/23/
+
+2019-12-22 14:45:19.830045: ../DSO_lists/SDO_filelist_20101124.txt is created
+2019-12-22 14:45:20.851314: HTTP Error 404: Not Found, https://sdo.gsfc.nasa.gov/assets/img/browse/2010/11/25/
+
