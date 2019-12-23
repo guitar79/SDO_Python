@@ -35,7 +35,7 @@ while date2 < p_end_date :
     dates.append(date)
     date1 = date2
 
-save_dir_name = '../DSO_lists/'
+save_dir_name = '../SDO_lists/'
 if not os.path.exists('{0}'.format(save_dir_name)):
     os.makedirs('{0}'.format(save_dir_name))
     print ('*'*80)

@@ -32,7 +32,7 @@ def SDO_image_list_to_filelist_1day(save_dir_name, date):
     add_log = True
     if add_log == True :
         log_file = 'SDO_image_list_to_filelist.log'
-        err_log_file = 'SDO_image_list_to_filelist.log'
+        err_log_file = 'SDO_image_list_to_filelist_err.log'
 
     downloaddate = date[0] #start date
 
@@ -68,7 +68,7 @@ def SDO_image_list_to_filelist_1day(save_dir_name, date):
                 
             with open("{0}SDO_filelist_{1}.txt".format(save_dir_name, download_date.strftime('%Y%m%d')), "w") as text_file:
                 text_file.write(file_lists)
-                write_log(err_log_file, "{2}: {0}SDO_filelist_{1}.txt is created".format(save_dir_name, download_date.strftime('%Y%m%d'), datetime.now()))
+                write_log(log_file, "{2}: {0}SDO_filelist_{1}.txt is created".format(save_dir_name, download_date.strftime('%Y%m%d'), datetime.now()))
             
         except Exception as err : 
             write_log(err_log_file, "{2}: {0}, {1}\n".format(err, url, datetime.now()))
