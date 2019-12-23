@@ -11,7 +11,6 @@ from glob import glob
 import os
 import SDO_utility
 
-
 ################################################
 ### Multiprocessing instead of multithreading
 ################################################
@@ -45,13 +44,11 @@ class Multiprocessor():
         rets = []
         for p in self.processes:
             ret = myQueue.get_nowait()
-
             rets.append(ret)
         for p in self.processes:
             p.terminate()
         return rets
  
-
 ###########################################
     
 myMP = Multiprocessor()
@@ -82,6 +79,6 @@ for SDO_filelist in SDO_filelists:
             myMP.run(SDO_utility.SDO_image_downloader_from_filelist, SDO_filelist, targets, request_hour)
         print("Batch " + str(batch))
         myMP.wait()
-        #values.append(myMP.wait())
+        values.append(myMP.wait())
         print("OK batch" + str(batch))
         
