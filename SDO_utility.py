@@ -68,6 +68,7 @@ def SDO_image_list_to_filelist_1day(save_dir_name, date):
             with open("{0}SDO_filelist_{1}.txt"\
                       .format(save_dir_name, download_date.strftime('%Y%m%d')), "w") as text_file:
                 text_file.write(file_lists)
+                print ('#'*60)
                 write_log(log_file, "{2}: {0}SDO_filelist_{1}.txt is created"\
                       .format(save_dir_name, download_date.strftime('%Y%m%d'), datetime.now()))
             
@@ -116,9 +117,9 @@ def SDO_image_downloader_from_filelist(SDO_filelist, targets, request_hour):
                             print ('Trying %s' % filename)
                             urllib.request.urlretrieve(url_list, '{0}{1}'\
                                    .format(save_dir_name, filename))
+                            print ('#'*60)
                             write_log(log_file, "{2}: {0}{1} is downloaded."\
                                   .format(save_dir_name, filename, datetime.now()))
-                            print ('Downloading' + filename)
                             
                         except Exception as err : 
                             write_log(err_log_file, "{2}: {0}, {1}\n"\

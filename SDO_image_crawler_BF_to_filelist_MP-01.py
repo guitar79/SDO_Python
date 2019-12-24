@@ -62,7 +62,7 @@ class Multiprocessor():
 ###########################################
     
 myMP = Multiprocessor()
-num_cpu = 8
+num_cpu = 365
 
     
 from dateutil.relativedelta import relativedelta
