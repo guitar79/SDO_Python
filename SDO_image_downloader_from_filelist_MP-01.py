@@ -70,18 +70,16 @@ filelist_dir_name = '../SDO_lists/'
 
 SDO_filelists = sorted(glob(os.path.join('{0}SDO_filelist_*.txt'.format(filelist_dir_name))))
 
-for SDO_filelist in SDO_filelists:
-        
-    values = []
-    num_batches = len(SDO_filelists) // num_cpu + 1
-    for batch in range(num_batches):
-        myMP.restart()
-        for SDO_filelist in SDO_filelists[batch*num_cpu:(batch+1)*num_cpu] :
-            print('url .. {0}'.format(SDO_filelist))
-            #myMP.run(f, fullname)
-            myMP.run(SDO_utility.SDO_image_downloader_from_filelist, SDO_filelist, targets, request_hour)
-        print("Batch " + str(batch))
-        myMP.wait()
-        #values.append(myMP.wait())
-        print("OK batch" + str(batch))
+values = []
+num_batches = len(SDO_filelists) // num_cpu + 1
+for batch in range(num_batches):
+    myMP.restart()
+    for SDO_filelist in SDO_filelists[batch*num_cpu:(batch+1)*num_cpu] :
+        print('url .. {0}'.format(SDO_filelist))
+        #myMP.run(f, fullname)
+        myMP.run(SDO_utility.SDO_image_downloader_from_filelist, SDO_filelist, targets, request_hour)
+    print("Batch " + str(batch))
+    myMP.wait()
+    #values.append(myMP.wait())
+    print("OK batch" + str(batch))
         

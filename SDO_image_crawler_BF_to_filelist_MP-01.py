@@ -90,18 +90,18 @@ else :
     print ('*'*80)
     print ('{0} is exist'.format(save_dir_name))
         
-for date in dates:
-    values = []
-    num_batches = len(dates) // num_cpu + 1
-    for batch in range(num_batches):
-        myMP.restart()
-        for date in dates[batch*num_cpu:(batch+1)*num_cpu] :
-            print('date : {0}'.format(date))
-            myMP.run(SDO_utility.SDO_image_list_to_filelist_1day, save_dir_name, date)
-                     
-        print("Batch " + str(batch))
-        myMP.wait()
-        #values.append(myMP.wait())
-        print("OK batch" + str(batch))
+
+values = []
+num_batches = len(dates) // num_cpu + 1
+for batch in range(num_batches):
+    myMP.restart()
+    for date in dates[batch*num_cpu:(batch+1)*num_cpu] :
+        print('date : {0}'.format(date))
+        myMP.run(SDO_utility.SDO_image_list_to_filelist_1day, save_dir_name, date)
+                 
+    print("Batch " + str(batch))
+    myMP.wait()
+    #values.append(myMP.wait())
+    print("OK batch" + str(batch))
             
     

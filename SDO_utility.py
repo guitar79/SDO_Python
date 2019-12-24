@@ -126,4 +126,4 @@ def SDO_image_downloader_from_filelist(SDO_filelist, targets, request_hour):
                                   .format(err, url_list, datetime.now()))
                             
                 else:
-                    print ('Skipping ' + filename)
+                    print ('{1} Skipping {0} '.format(filename, datetime.now()))
