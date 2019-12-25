@@ -55,8 +55,9 @@ for i in range(len(url_lists)):
             try : 
                 print ('Trying %s' % filename)
                 urllib.request.urlretrieve(url_list, '{0}{1}'.format(save_dir_name, filename))
-                SDO_utility.write_log(log_file, "{2}: {0}{1} is downloaded.".format(save_dir_name, filename, datetime.now()))
-                print ('Downloading' + filename)
+                SDO_utility.write_log(log_file, '{2}: {0}{1} is downloaded.'\
+                      .format(save_dir_name, filename, datetime.now()))
+                print ('Downloading {0}'.format(filename))
                 
             except Exception as err : 
                 SDO_utility.write_log(err_log_file, "{2}: {0}, {1}\n".format(err, url_list, datetime.now()))
