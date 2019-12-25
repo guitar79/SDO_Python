@@ -64,10 +64,9 @@ class Multiprocessor():
 myMP = Multiprocessor()
 num_cpu = 365
 
-    
 from dateutil.relativedelta import relativedelta
-p_start_date = datetime(2010, 4, 1) #convert startdate to date type
-p_end_date = datetime(2018, 12, 31)
+p_start_date = datetime(2018, 4, 1) #convert startdate to date type
+p_end_date = datetime(2019, 12, 25)
 
 date_No = 0
 date1 = p_start_date
@@ -98,7 +97,6 @@ for batch in range(num_batches):
     for date in dates[batch*num_cpu:(batch+1)*num_cpu] :
         print('date : {0}'.format(date))
         myMP.run(SDO_utility.SDO_image_list_to_filelist_1day, save_dir_name, date)
-                 
     print("Batch " + str(batch))
     myMP.wait()
     #values.append(myMP.wait())

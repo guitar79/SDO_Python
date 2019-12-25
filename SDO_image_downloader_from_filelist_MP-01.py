@@ -55,7 +55,7 @@ class Multiprocessor():
 ###########################################
     
 myMP = Multiprocessor()
-num_cpu = 200
+num_cpu = 50
 
 # some variables for downloading (site, file, perid and time gap, etc.)
 site = 'https://sdo.gsfc.nasa.gov/assets/img/browse/'

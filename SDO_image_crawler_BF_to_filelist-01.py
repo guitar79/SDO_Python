@@ -21,7 +21,7 @@ if add_log == True :
     
 from dateutil.relativedelta import relativedelta
 p_start_date = datetime(2010, 4, 1) #convert startdate to date type
-p_end_date = datetime(2018, 12, 31)
+p_end_date = datetime(2019, 12, 25)
 
 date_No = 0
 date1 = p_start_date
