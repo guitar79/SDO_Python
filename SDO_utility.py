@@ -32,23 +32,24 @@ def SDO_image_list_to_filelist_1day(save_dir_name, date):
     add_log = True
     if add_log == True :
         log_file = 'SDO_image_list_to_filelist.log'
-        err_log_file = 'SDO_image_list_to_filelist_err.log'
+        err_log_file = 'SDO_image_list_to_filelist.log'
 
     downloaddate = date[0] #start date
+
             
     #variable for calculating date
-    #convert downloaddate to date type
-    download_date = datetime.date(datetime.strptime(downloaddate, '%Y%m%d')) 
-        
+    download_date = datetime.date(datetime.strptime(downloaddate, '%Y%m%d')) #convert downloaddate to date type
+    
     file_lists = '#this file is created by guitar79@naver.com\n'
      
     download_date = download_date
     if os.path.isfile("{0}SDO_filelist_{1}.txt"\
                       .format(save_dir_name, download_date.strftime('%Y%m%d'))) :
-        write_log(log_file, "{2} ::: {0}SDO_filelist_{1}.txt is already exist."\
+        write_log(log_file, "{2} ::: {0}SDO_filelist_{1}.txt is laready exist."\
                   .format(save_dir_name, download_date.strftime('%Y%m%d'), datetime.now()))
     else : 
         try : 
+            
             directory = download_date.strftime('%Y') + '/' + download_date.strftime('%m') + '/' + download_date.strftime('%d') + '/'
             url = site + directory
             print ('*'*80)
@@ -65,65 +66,15 @@ def SDO_image_list_to_filelist_1day(save_dir_name, date):
                 filename = file_list[i].text
                 file_lists += site + download_date.strftime('%Y/%m/%d/') + filename + '\n'
                 
-            with open("{0}SDO_filelist_{1}.txt"\
-                      .format(save_dir_name, download_date.strftime('%Y%m%d')), "w") as text_file:
+            with open("{0}SDO_filelist_{1}.txt".format(save_dir_name, download_date.strftime('%Y%m%d')), "w") as text_file:
                 text_file.write(file_lists)
-                print ('#'*60)
-                write_log(log_file, "{2}: {0}SDO_filelist_{1}.txt is created"\
-                      .format(save_dir_name, download_date.strftime('%Y%m%d'), datetime.now()))
+                write_log(err_log_file, "{2}: {0}SDO_filelist_{1}.txt is created".format(save_dir_name, download_date.strftime('%Y%m%d'), datetime.now()))
             
         except Exception as err : 
             write_log(err_log_file, "{2}: {0}, {1}\n".format(err, url, datetime.now()))
-
-def SDO_image_downloader_from_filelist(SDO_filelist, targets, request_hour):
-    import urllib.request
-    add_log = True
-    if add_log == True :
-        log_file = 'SDO_image_download_from_filelist.log'
-        err_log_file = 'SDO_image_download_from_filelist_err.log'
-    # Open the file with read only permit
-    f = open(SDO_filelist,'r')
-    all_text = f.read()
-    url_lists = all_text.split('\n')
-    
-    # close the file after reading the lines.
-    f.close()
-
-    for url_list in url_lists:    
-    
-        if url_list[:8] == 'https://' and url_list[-4:] == '.jpg':
-            
-            url_el = url_list.split('/')
-            filename = url_el[-1]
-            filename_el = filename.split('_')
-            
-            for target in targets : 
-                save_dir_name = '../{0}/'.format(target)
-                if not os.path.exists(save_dir_name):
-                    os.makedirs(save_dir_name)
-                    print ('*'*80)
-                    print ('{0} is created.'.format(save_dir_name))
                 
-                if target == '{0}_{1}'.format(filename_el[-2], filename_el[-1]) \
-                    and int(filename_to_hour(filename).strftime('%H')) in request_hour :
-                
-                    if os.path.exists('%s/%s' % (save_dir_name, filename)):
-                        print ('*'*40)
-                        print ('{0} is exist'.format(filename))
-                    
-                    else :
-                    
-                        try : 
-                            print ('Trying %s' % filename)
-                            urllib.request.urlretrieve(url_list, '{0}{1}'\
-                                   .format(save_dir_name, filename))
-                            print ('#'*60)
-                            write_log(log_file, "{2}: {0}{1} is downloaded."\
-                                  .format(save_dir_name, filename, datetime.now()))
-                            
-                        except Exception as err : 
-                            write_log(err_log_file, "{2}: {0}, {1}\n"\
-                                  .format(err, url_list, datetime.now()))
-                            
-                else:
-                    print ('{1} Skipping {0} '.format(filename, datetime.now()))
+            
+        
+            
+    
+    

@@ -20,8 +20,8 @@ def filename_to_hour(filename):
 
 #%%
 from dateutil.relativedelta import relativedelta
-p_start_date = datetime(2014, 5, 1) #convert startdate to date type
-p_end_date = datetime(2018, 12, 31)
+p_start_date = datetime(2012, 1, 1) #convert startdate to date type
+p_end_date = datetime(2019, 12, 31)
 
 date_No = 0
 date1 = p_start_date
@@ -68,10 +68,10 @@ for period in periods:
                 file_lists += site + download_date.strftime('%Y/%m/%d/') + filename + '\n'
             
         except Exception as err : 
-            with open('crawler_errorlog_{0}_{1}.log'.format(period[0], period[1]), "a") as write_errorlog :
+            with open('./log/crawler_errorlog_{0}_{1}.log'.format(period[0], period[1]), "a") as write_errorlog :
                 write_errorlog.write("{0}: {1}, {2}\n".format(datetime.now(), err, url))
             print ('*'*80)
             print(err, url)
     
-    with open("SDO_filelist_{0}_{1}.txt".format(startdate, enddate), "w") as text_file:
+    with open("../SDO_filelists/SDO_filelist_{0}_{1}.txt".format(startdate, enddate), "w") as text_file:
         text_file.write(file_lists)

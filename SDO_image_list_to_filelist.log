@@ -1,0 +1,439 @@
+2019-12-22 14:48:29.303564: ../DSO_lists/SDO_filelist_20110129.txt is created
+2019-12-22 14:48:30.248038: Remote end closed connection without response, https://sdo.gsfc.nasa.gov/assets/img/browse/2011/01/30/
+
+2019-12-22 14:48:34.000997: ../DSO_lists/SDO_filelist_20110131.txt is created
+2019-12-22 14:48:37.372976: ../DSO_lists/SDO_filelist_20110201.txt is created
+2019-12-22 14:48:40.987306: ../DSO_lists/SDO_filelist_20110202.txt is created
+2019-12-22 14:48:44.183752: ../DSO_lists/SDO_filelist_20110203.txt is created
+2019-12-22 14:48:47.264509: ../DSO_lists/SDO_filelist_20110204.txt is created
+2019-12-22 14:48:50.099924: ../DSO_lists/SDO_filelist_20110205.txt is created
+2019-12-22 14:48:53.155747: ../DSO_lists/SDO_filelist_20110206.txt is created
+2019-12-22 14:48:56.708290: ../DSO_lists/SDO_filelist_20110207.txt is created
+2019-12-22 14:49:00.078413: ../DSO_lists/SDO_filelist_20110208.txt is created
+2019-12-22 14:49:03.515218: ../DSO_lists/SDO_filelist_20110209.txt is created
+2019-12-22 14:49:06.022514: ../DSO_lists/SDO_filelist_20110210.txt is created
+2019-12-22 14:49:10.010865: ../DSO_lists/SDO_filelist_20110211.txt is created
+2019-12-22 14:49:11.642025: ../DSO_lists/SDO_filelist_20110212.txt is created
+2019-12-22 14:49:13.508033: ../DSO_lists/SDO_filelist_20110213.txt is created
+2019-12-22 14:49:15.117725: ../DSO_lists/SDO_filelist_20110214.txt is created
+2019-12-22 14:49:16.846618: ../DSO_lists/SDO_filelist_20110215.txt is created
+2019-12-22 14:49:18.562030: ../DSO_lists/SDO_filelist_20110216.txt is created
+2019-12-22 14:49:22.261130: ../DSO_lists/SDO_filelist_20110217.txt is created
+2019-12-22 14:49:24.025410: ../DSO_lists/SDO_filelist_20110218.txt is created
+2019-12-22 14:49:27.532027: ../DSO_lists/SDO_filelist_20110219.txt is created
+2019-12-22 14:49:29.812925: ../DSO_lists/SDO_filelist_20110220.txt is created
+2019-12-22 14:49:32.548605: ../DSO_lists/SDO_filelist_20110221.txt is created
+2019-12-22 14:49:35.173582: ../DSO_lists/SDO_filelist_20110222.txt is created
+2019-12-22 14:49:38.995358: ../DSO_lists/SDO_filelist_20110223.txt is created
+2019-12-22 14:49:41.982366: ../DSO_lists/SDO_filelist_20110224.txt is created
+2019-12-22 14:49:45.040184: ../DSO_lists/SDO_filelist_20110225.txt is created
+2019-12-22 14:49:47.321081: ../DSO_lists/SDO_filelist_20110226.txt is created
+2019-12-22 14:49:49.170134: ../DSO_lists/SDO_filelist_20110227.txt is created
+2019-12-22 14:49:50.651171: ../DSO_lists/SDO_filelist_20110228.txt is created
+2019-12-22 14:49:52.338657: ../DSO_lists/SDO_filelist_20110301.txt is created
+2019-12-22 14:49:55.916085: ../DSO_lists/SDO_filelist_20110302.txt is created
+2019-12-22 14:49:57.406102: ../DSO_lists/SDO_filelist_20110303.txt is created
+2019-12-22 14:49:58.904091: ../DSO_lists/SDO_filelist_20110304.txt is created
+2019-12-22 14:50:02.187306: ../DSO_lists/SDO_filelist_20110305.txt is created
+2019-12-22 14:50:06.041995: ../DSO_lists/SDO_filelist_20110306.txt is created
+2019-12-22 14:50:07.758402: ../DSO_lists/SDO_filelist_20110307.txt is created
+2019-12-22 14:50:09.590500: ../DSO_lists/SDO_filelist_20110308.txt is created
+2019-12-22 14:50:12.736083: ../DSO_lists/SDO_filelist_20110309.txt is created
+2019-12-22 14:50:14.605085: ../DSO_lists/SDO_filelist_20110310.txt is created
+2019-12-22 14:50:16.361384: ../DSO_lists/SDO_filelist_20110311.txt is created
+2019-12-22 14:50:17.835439: ../DSO_lists/SDO_filelist_20110312.txt is created
+2019-12-22 14:50:19.759294: ../DSO_lists/SDO_filelist_20110313.txt is created
+2019-12-22 14:50:24.076742: ../DSO_lists/SDO_filelist_20110314.txt is created
+2019-12-22 14:50:28.119442: ../DSO_lists/SDO_filelist_20110315.txt is created
+2019-12-22 14:50:31.478968: ../DSO_lists/SDO_filelist_20110316.txt is created
+2019-12-22 14:50:36.200334: ../DSO_lists/SDO_filelist_20110317.txt is created
+2019-12-22 14:50:41.304226: ../DSO_lists/SDO_filelist_20110318.txt is created
+2019-12-22 14:50:46.197135: ../DSO_lists/SDO_filelist_20110319.txt is created
+2019-12-22 14:50:49.550164: ../DSO_lists/SDO_filelist_20110320.txt is created
+2019-12-22 14:50:51.706396: ../DSO_lists/SDO_filelist_20110321.txt is created
+2019-12-22 14:50:54.510894: ../DSO_lists/SDO_filelist_20110322.txt is created
+2019-12-22 14:50:58.645829: ../DSO_lists/SDO_filelist_20110323.txt is created
+2019-12-22 14:51:02.683026: ../DSO_lists/SDO_filelist_20110324.txt is created
+2019-12-22 14:51:05.574292: ../DSO_lists/SDO_filelist_20110325.txt is created
+2019-12-22 14:51:08.833569: ../DSO_lists/SDO_filelist_20110326.txt is created
+2019-12-22 14:51:12.785995: ../DSO_lists/SDO_filelist_20110327.txt is created
+2019-12-22 14:51:14.887373: ../DSO_lists/SDO_filelist_20110328.txt is created
+2019-12-22 14:51:18.341133: ../DSO_lists/SDO_filelist_20110329.txt is created
+2019-12-22 14:51:20.632005: ../DSO_lists/SDO_filelist_20110330.txt is created
+2019-12-22 14:51:22.183852: ../DSO_lists/SDO_filelist_20110331.txt is created
+2019-12-22 14:51:26.509280: ../DSO_lists/SDO_filelist_20110401.txt is created
+2019-12-22 14:51:28.346363: ../DSO_lists/SDO_filelist_20110402.txt is created
+2019-12-22 14:51:32.132235: ../DSO_lists/SDO_filelist_20110403.txt is created
+2019-12-22 14:51:35.996896: ../DSO_lists/SDO_filelist_20110404.txt is created
+2019-12-22 14:51:38.657777: ../DSO_lists/SDO_filelist_20110405.txt is created
+2019-12-22 14:51:40.790071: ../DSO_lists/SDO_filelist_20110406.txt is created
+2019-12-22 14:51:43.109865: ../DSO_lists/SDO_filelist_20110407.txt is created
+2019-12-22 14:51:44.946949: ../DSO_lists/SDO_filelist_20110408.txt is created
+2019-12-22 14:51:46.895735: ../DSO_lists/SDO_filelist_20110409.txt is created
+2019-12-22 14:51:49.962529: ../DSO_lists/SDO_filelist_20110410.txt is created
+2019-12-22 14:51:53.785301: ../DSO_lists/SDO_filelist_20110411.txt is created
+2019-12-22 14:51:58.140648: ../DSO_lists/SDO_filelist_20110412.txt is created
+2019-12-22 14:52:02.244668: ../DSO_lists/SDO_filelist_20110413.txt is created
+2019-12-22 14:52:06.117308: ../DSO_lists/SDO_filelist_20110414.txt is created
+2019-12-22 14:52:14.311384: ../DSO_lists/SDO_filelist_20110415.txt is created
+2019-12-22 14:52:18.765467: ../DSO_lists/SDO_filelist_20110416.txt is created
+2019-12-22 14:52:23.223540: ../DSO_lists/SDO_filelist_20110417.txt is created
+2019-12-22 14:52:27.660668: ../DSO_lists/SDO_filelist_20110418.txt is created
+2019-12-22 14:52:31.917279: ../DSO_lists/SDO_filelist_20110419.txt is created
+2019-12-22 14:52:34.981081: ../DSO_lists/SDO_filelist_20110420.txt is created
+2019-12-22 14:52:38.872669: ../DSO_lists/SDO_filelist_20110421.txt is created
+2019-12-22 14:52:42.953751: ../DSO_lists/SDO_filelist_20110422.txt is created
+2019-12-22 14:52:47.275189: ../DSO_lists/SDO_filelist_20110423.txt is created
+2019-12-22 14:52:51.474952: ../DSO_lists/SDO_filelist_20110424.txt is created
+2019-12-22 14:52:55.820326: ../DSO_lists/SDO_filelist_20110425.txt is created
+2019-12-22 14:53:00.096883: ../DSO_lists/SDO_filelist_20110426.txt is created
+2019-12-22 14:53:04.852161: ../DSO_lists/SDO_filelist_20110427.txt is created
+2019-12-22 14:53:09.234436: ../DSO_lists/SDO_filelist_20110428.txt is created
+2019-12-22 14:53:12.009013: ../DSO_lists/SDO_filelist_20110429.txt is created
+2019-12-22 14:53:16.286567: ../DSO_lists/SDO_filelist_20110430.txt is created
+2019-12-22 14:53:20.879280: ../DSO_lists/SDO_filelist_20110501.txt is created
+2019-12-22 14:53:25.041145: ../DSO_lists/SDO_filelist_20110502.txt is created
+2019-12-22 14:53:29.419430: ../DSO_lists/SDO_filelist_20110503.txt is created
+2019-12-22 14:53:33.742864: ../DSO_lists/SDO_filelist_20110504.txt is created
+2019-12-22 14:53:38.206920: ../DSO_lists/SDO_filelist_20110505.txt is created
+2019-12-22 14:53:42.326896: ../DSO_lists/SDO_filelist_20110506.txt is created
+2019-12-22 14:53:43.764051: Remote end closed connection without response, https://sdo.gsfc.nasa.gov/assets/img/browse/2011/05/07/
+
+2019-12-22 14:53:48.389676: ../DSO_lists/SDO_filelist_20110508.txt is created
+2019-12-22 14:53:52.606393: ../DSO_lists/SDO_filelist_20110509.txt is created
+2019-12-22 14:53:56.828099: ../DSO_lists/SDO_filelist_20110510.txt is created
+2019-12-22 14:54:00.583052: ../DSO_lists/SDO_filelist_20110511.txt is created
+2019-12-22 14:54:05.054090: ../DSO_lists/SDO_filelist_20110512.txt is created
+2019-12-22 14:54:09.391485: ../DSO_lists/SDO_filelist_20110513.txt is created
+2019-12-22 14:54:13.289056: ../DSO_lists/SDO_filelist_20110514.txt is created
+2019-12-22 14:54:17.347200: ../DSO_lists/SDO_filelist_20110515.txt is created
+2019-12-22 14:54:21.828211: ../DSO_lists/SDO_filelist_20110516.txt is created
+2019-12-22 14:54:25.835488: ../DSO_lists/SDO_filelist_20110517.txt is created
+2019-12-22 14:54:29.162586: ../DSO_lists/SDO_filelist_20110518.txt is created
+2019-12-22 14:54:33.354371: ../DSO_lists/SDO_filelist_20110519.txt is created
+2019-12-22 14:54:37.502274: ../DSO_lists/SDO_filelist_20110520.txt is created
+2019-12-22 14:54:41.968325: ../DSO_lists/SDO_filelist_20110521.txt is created
+2019-12-22 14:54:46.100269: ../DSO_lists/SDO_filelist_20110522.txt is created
+2019-12-22 14:54:49.947974: ../DSO_lists/SDO_filelist_20110523.txt is created
+2019-12-22 14:54:55.023396: ../DSO_lists/SDO_filelist_20110524.txt is created
+2019-12-22 14:54:59.960187: ../DSO_lists/SDO_filelist_20110525.txt is created
+2019-12-22 14:55:04.312545: ../DSO_lists/SDO_filelist_20110526.txt is created
+2019-12-22 14:55:08.921211: ../DSO_lists/SDO_filelist_20110527.txt is created
+2019-12-22 14:55:14.016580: ../DSO_lists/SDO_filelist_20110528.txt is created
+2019-12-22 14:55:18.886549: ../DSO_lists/SDO_filelist_20110529.txt is created
+2019-12-22 14:55:23.905122: ../DSO_lists/SDO_filelist_20110530.txt is created
+2019-12-22 14:55:28.324300: ../DSO_lists/SDO_filelist_20110531.txt is created
+2019-12-22 14:55:32.535032: ../DSO_lists/SDO_filelist_20110601.txt is created
+2019-12-22 14:55:36.769703: ../DSO_lists/SDO_filelist_20110602.txt is created
+2019-12-22 14:55:40.888682: ../DSO_lists/SDO_filelist_20110603.txt is created
+2019-12-22 14:55:45.242035: ../DSO_lists/SDO_filelist_20110604.txt is created
+2019-12-22 14:55:49.888602: ../DSO_lists/SDO_filelist_20110605.txt is created
+2019-12-22 14:55:54.412500: ../DSO_lists/SDO_filelist_20110606.txt is created
+2019-12-22 14:55:58.691051: ../DSO_lists/SDO_filelist_20110607.txt is created
+2019-12-22 14:56:02.910762: ../DSO_lists/SDO_filelist_20110608.txt is created
+2019-12-22 14:56:07.196295: ../DSO_lists/SDO_filelist_20110609.txt is created
+2019-12-22 14:56:11.642400: ../DSO_lists/SDO_filelist_20110610.txt is created
+2019-12-22 14:56:15.507059: ../DSO_lists/SDO_filelist_20110611.txt is created
+2019-12-22 14:56:19.094461: ../DSO_lists/SDO_filelist_20110612.txt is created
+2019-12-22 14:56:23.190503: ../DSO_lists/SDO_filelist_20110613.txt is created
+2019-12-22 14:56:24.079125: Remote end closed connection without response, https://sdo.gsfc.nasa.gov/assets/img/browse/2011/06/14/
+
+2019-12-22 14:56:25.079450: Remote end closed connection without response, https://sdo.gsfc.nasa.gov/assets/img/browse/2011/06/15/
+
+2019-12-22 14:56:29.426817: ../DSO_lists/SDO_filelist_20110616.txt is created
+2019-12-22 14:56:34.002576: ../DSO_lists/SDO_filelist_20110617.txt is created
+2019-12-22 14:56:38.243229: ../DSO_lists/SDO_filelist_20110618.txt is created
+2019-12-22 14:56:42.511811: ../DSO_lists/SDO_filelist_20110619.txt is created
+2019-12-22 14:56:47.028723: ../DSO_lists/SDO_filelist_20110620.txt is created
+2019-12-22 14:56:50.544317: ../DSO_lists/SDO_filelist_20110621.txt is created
+2019-12-22 14:56:53.592163: ../DSO_lists/SDO_filelist_20110622.txt is created
+2019-12-22 14:56:57.728097: ../DSO_lists/SDO_filelist_20110623.txt is created
+2019-12-22 14:57:02.031583: ../DSO_lists/SDO_filelist_20110624.txt is created
+2019-12-22 14:57:06.027891: ../DSO_lists/SDO_filelist_20110625.txt is created
+2019-12-22 14:57:10.545818: ../DSO_lists/SDO_filelist_20110626.txt is created
+2019-12-22 14:57:13.490923: ../DSO_lists/SDO_filelist_20110627.txt is created
+2019-12-22 14:57:18.021801: ../DSO_lists/SDO_filelist_20110628.txt is created
+2019-12-22 14:57:22.088919: ../DSO_lists/SDO_filelist_20110629.txt is created
+2019-12-22 14:57:26.686617: ../DSO_lists/SDO_filelist_20110630.txt is created
+2019-12-22 14:57:31.238439: ../DSO_lists/SDO_filelist_20110701.txt is created
+2019-12-22 14:57:36.625027: ../DSO_lists/SDO_filelist_20110702.txt is created
+2019-12-22 14:57:41.133964: ../DSO_lists/SDO_filelist_20110703.txt is created
+2019-12-22 14:57:43.455752: IncompleteRead(0 bytes read), https://sdo.gsfc.nasa.gov/assets/img/browse/2011/07/04/
+
+2019-12-22 14:57:48.193078: ../DSO_lists/SDO_filelist_20110705.txt is created
+2019-12-22 14:57:52.848621: ../DSO_lists/SDO_filelist_20110706.txt is created
+2019-12-22 14:57:57.041402: ../DSO_lists/SDO_filelist_20110707.txt is created
+2019-12-22 14:57:59.854876: ../DSO_lists/SDO_filelist_20110708.txt is created
+2019-12-22 14:58:03.887087: ../DSO_lists/SDO_filelist_20110709.txt is created
+2019-12-22 14:58:08.083860: ../DSO_lists/SDO_filelist_20110710.txt is created
+2019-12-22 14:58:12.449179: ../DSO_lists/SDO_filelist_20110711.txt is created
+2019-12-22 14:58:16.567161: ../DSO_lists/SDO_filelist_20110712.txt is created
+2019-12-22 14:58:20.945448: ../DSO_lists/SDO_filelist_20110713.txt is created
+2019-12-22 14:58:26.990274: ../DSO_lists/SDO_filelist_20110714.txt is created
+2019-12-22 14:58:31.225941: ../DSO_lists/SDO_filelist_20110715.txt is created
+2019-12-22 14:58:35.721912: ../DSO_lists/SDO_filelist_20110716.txt is created
+2019-12-22 14:58:40.321606: ../DSO_lists/SDO_filelist_20110717.txt is created
+2019-12-22 14:58:44.731806: ../DSO_lists/SDO_filelist_20110718.txt is created
+2019-12-22 14:58:49.121063: ../DSO_lists/SDO_filelist_20110719.txt is created
+2019-12-22 14:58:53.326810: ../DSO_lists/SDO_filelist_20110720.txt is created
+2019-12-22 14:58:57.965401: ../DSO_lists/SDO_filelist_20110721.txt is created
+2019-12-22 14:59:02.931113: ../DSO_lists/SDO_filelist_20110722.txt is created
+2019-12-22 14:59:08.438379: ../DSO_lists/SDO_filelist_20110723.txt is created
+2019-12-22 14:59:17.917019: ../DSO_lists/SDO_filelist_20110724.txt is created
+2019-12-22 14:59:25.321209: ../DSO_lists/SDO_filelist_20110725.txt is created
+2019-12-22 14:59:30.808527: ../DSO_lists/SDO_filelist_20110726.txt is created
+2019-12-22 14:59:37.015919: ../DSO_lists/SDO_filelist_20110727.txt is created
+2019-12-22 14:59:41.331373: ../DSO_lists/SDO_filelist_20110728.txt is created
+2019-12-22 14:59:46.040775: ../DSO_lists/SDO_filelist_20110729.txt is created
+2019-12-22 14:59:51.901094: ../DSO_lists/SDO_filelist_20110730.txt is created
+2019-12-22 14:59:56.826914: ../DSO_lists/SDO_filelist_20110731.txt is created
+2019-12-22 15:00:01.036651: ../DSO_lists/SDO_filelist_20110801.txt is created
+2019-12-22 15:00:08.919561: ../DSO_lists/SDO_filelist_20110802.txt is created
+2019-12-22 15:00:16.447420: ../DSO_lists/SDO_filelist_20110803.txt is created
+2019-12-22 15:00:24.012181: ../DSO_lists/SDO_filelist_20110804.txt is created
+2019-12-22 15:00:28.579958: ../DSO_lists/SDO_filelist_20110805.txt is created
+2019-12-22 15:00:35.179302: ../DSO_lists/SDO_filelist_20110806.txt is created
+2019-12-22 15:00:40.118089: ../DSO_lists/SDO_filelist_20110807.txt is created
+2019-12-22 15:00:44.870373: ../DSO_lists/SDO_filelist_20110808.txt is created
+2019-12-22 15:00:47.953126: Remote end closed connection without response, https://sdo.gsfc.nasa.gov/assets/img/browse/2011/08/09/
+
+2019-12-22 15:00:53.069437: ../DSO_lists/SDO_filelist_20110810.txt is created
+2019-12-22 15:00:58.112942: ../DSO_lists/SDO_filelist_20110811.txt is created
+2019-12-22 15:01:02.395485: ../DSO_lists/SDO_filelist_20110812.txt is created
+2019-12-22 15:01:06.999167: ../DSO_lists/SDO_filelist_20110813.txt is created
+2019-12-22 15:01:14.133080: ../DSO_lists/SDO_filelist_20110814.txt is created
+2019-12-22 15:01:15.561262: Remote end closed connection without response, https://sdo.gsfc.nasa.gov/assets/img/browse/2011/08/15/
+
+2019-12-22 15:01:20.405300: ../DSO_lists/SDO_filelist_20110816.txt is created
+2019-12-22 15:01:26.247669: ../DSO_lists/SDO_filelist_20110817.txt is created
+2019-12-22 15:01:31.587382: ../DSO_lists/SDO_filelist_20110818.txt is created
+2019-12-22 15:01:38.106938: ../DSO_lists/SDO_filelist_20110819.txt is created
+2019-12-22 15:01:43.171389: ../DSO_lists/SDO_filelist_20110820.txt is created
+2019-12-22 15:01:49.568274: ../DSO_lists/SDO_filelist_20110821.txt is created
+2019-12-22 15:01:55.308914: ../DSO_lists/SDO_filelist_20110822.txt is created
+2019-12-22 15:02:01.735719: ../DSO_lists/SDO_filelist_20110823.txt is created
+2019-12-22 15:02:08.892571: ../DSO_lists/SDO_filelist_20110824.txt is created
+2019-12-22 15:02:14.254227: ../DSO_lists/SDO_filelist_20110825.txt is created
+2019-12-22 15:02:16.657795: Remote end closed connection without response, https://sdo.gsfc.nasa.gov/assets/img/browse/2011/08/26/
+
+2019-12-22 15:02:22.849229: ../DSO_lists/SDO_filelist_20110827.txt is created
+2019-12-22 15:02:28.428302: ../DSO_lists/SDO_filelist_20110828.txt is created
+2019-12-22 15:02:33.496743: ../DSO_lists/SDO_filelist_20110829.txt is created
+2019-12-22 15:02:39.755997: ../DSO_lists/SDO_filelist_20110830.txt is created
+2019-12-22 15:02:44.135278: ../DSO_lists/SDO_filelist_20110831.txt is created
+2019-12-22 15:02:48.250268: ../DSO_lists/SDO_filelist_20110901.txt is created
+2019-12-22 15:02:54.087653: ../DSO_lists/SDO_filelist_20110902.txt is created
+2019-12-22 15:02:58.338277: ../DSO_lists/SDO_filelist_20110903.txt is created
+2019-12-22 15:03:03.804652: ../DSO_lists/SDO_filelist_20110904.txt is created
+2019-12-22 15:03:07.968511: ../DSO_lists/SDO_filelist_20110905.txt is created
+2019-12-22 15:03:12.128381: ../DSO_lists/SDO_filelist_20110906.txt is created
+2019-12-22 15:03:16.064851: ../DSO_lists/SDO_filelist_20110907.txt is created
+2019-12-22 15:03:21.827433: ../DSO_lists/SDO_filelist_20110908.txt is created
+2019-12-22 15:03:26.064097: ../DSO_lists/SDO_filelist_20110909.txt is created
+2019-12-22 15:03:30.168117: ../DSO_lists/SDO_filelist_20110910.txt is created
+2019-12-22 15:03:34.119545: ../DSO_lists/SDO_filelist_20110911.txt is created
+2019-12-22 15:03:38.448960: ../DSO_lists/SDO_filelist_20110912.txt is created
+2019-12-22 15:03:42.403381: ../DSO_lists/SDO_filelist_20110913.txt is created
+2019-12-22 15:03:47.312247: ../DSO_lists/SDO_filelist_20110914.txt is created
+2019-12-22 15:03:51.351440: ../DSO_lists/SDO_filelist_20110915.txt is created
+2019-12-22 15:03:56.329122: ../DSO_lists/SDO_filelist_20110916.txt is created
+2019-12-22 15:04:01.046501: ../DSO_lists/SDO_filelist_20110917.txt is created
+2019-12-22 15:04:06.120925: ../DSO_lists/SDO_filelist_20110918.txt is created
+2019-12-22 15:04:11.430718: ../DSO_lists/SDO_filelist_20110919.txt is created
+2019-12-22 15:04:16.122165: ../DSO_lists/SDO_filelist_20110920.txt is created
+2019-12-22 15:04:21.076911: ../DSO_lists/SDO_filelist_20110921.txt is created
+2019-12-22 15:04:25.932917: ../DSO_lists/SDO_filelist_20110922.txt is created
+2019-12-22 15:04:30.986396: ../DSO_lists/SDO_filelist_20110923.txt is created
+2019-12-22 15:04:34.559835: ../DSO_lists/SDO_filelist_20110924.txt is created
+2019-12-22 15:04:38.855344: ../DSO_lists/SDO_filelist_20110925.txt is created
+2019-12-22 15:04:43.977638: ../DSO_lists/SDO_filelist_20110926.txt is created
+2019-12-22 15:04:48.699007: ../DSO_lists/SDO_filelist_20110927.txt is created
+2019-12-22 15:04:56.456251: ../DSO_lists/SDO_filelist_20110928.txt is created
+2019-12-22 15:05:01.462855: ../DSO_lists/SDO_filelist_20110929.txt is created
+2019-12-22 15:05:07.325171: ../DSO_lists/SDO_filelist_20110930.txt is created
+2019-12-22 15:05:11.035244: ../DSO_lists/SDO_filelist_20111001.txt is created
+2019-12-22 15:05:18.586043: ../DSO_lists/SDO_filelist_20111002.txt is created
+2019-12-22 15:05:24.451350: ../DSO_lists/SDO_filelist_20111003.txt is created
+2019-12-22 15:05:29.703297: ../DSO_lists/SDO_filelist_20111004.txt is created
+2019-12-22 15:05:33.993818: ../DSO_lists/SDO_filelist_20111005.txt is created
+2019-12-22 15:05:37.331887: ../DSO_lists/SDO_filelist_20111006.txt is created
+2019-12-22 15:05:39.788315: ../DSO_lists/SDO_filelist_20111007.txt is created
+2019-12-22 15:05:43.132369: ../DSO_lists/SDO_filelist_20111008.txt is created
+2019-12-22 15:05:47.876675: ../DSO_lists/SDO_filelist_20111009.txt is created
+2019-12-22 15:05:52.186145: ../DSO_lists/SDO_filelist_20111010.txt is created
+2019-12-22 15:05:56.367957: ../DSO_lists/SDO_filelist_20111011.txt is created
+2019-12-22 15:06:01.503216: ../DSO_lists/SDO_filelist_20111012.txt is created
+2019-12-22 15:06:06.616536: ../DSO_lists/SDO_filelist_20111013.txt is created
+2019-12-22 15:06:09.779075: ../DSO_lists/SDO_filelist_20111014.txt is created
+2019-12-22 15:06:14.137413: ../DSO_lists/SDO_filelist_20111015.txt is created
+2019-12-22 15:06:18.111780: ../DSO_lists/SDO_filelist_20111016.txt is created
+2019-12-22 15:06:23.015660: ../DSO_lists/SDO_filelist_20111017.txt is created
+2019-12-22 15:06:27.591417: ../DSO_lists/SDO_filelist_20111018.txt is created
+2019-12-22 15:06:34.036174: ../DSO_lists/SDO_filelist_20111019.txt is created
+2019-12-22 15:06:37.515863: ../DSO_lists/SDO_filelist_20111020.txt is created
+2019-12-22 15:06:42.354916: ../DSO_lists/SDO_filelist_20111021.txt is created
+2019-12-22 15:06:45.798703: ../DSO_lists/SDO_filelist_20111022.txt is created
+2019-12-22 15:06:50.368477: ../DSO_lists/SDO_filelist_20111023.txt is created
+2019-12-22 15:06:53.133080: ../DSO_lists/SDO_filelist_20111024.txt is created
+2019-12-22 15:06:57.660966: ../DSO_lists/SDO_filelist_20111025.txt is created
+2019-12-22 15:07:04.647274: ../DSO_lists/SDO_filelist_20111026.txt is created
+2019-12-22 15:07:11.709380: ../DSO_lists/SDO_filelist_20111027.txt is created
+2019-12-22 15:07:15.630894: ../DSO_lists/SDO_filelist_20111028.txt is created
+2019-12-22 15:07:20.713289: ../DSO_lists/SDO_filelist_20111029.txt is created
+2019-12-22 15:07:25.243169: ../DSO_lists/SDO_filelist_20111030.txt is created
+2019-12-22 15:07:31.239126: ../DSO_lists/SDO_filelist_20111031.txt is created
+2019-12-22 15:07:35.624396: ../DSO_lists/SDO_filelist_20111101.txt is created
+2019-12-22 15:07:39.802216: ../DSO_lists/SDO_filelist_20111102.txt is created
+2019-12-22 15:07:45.164867: ../DSO_lists/SDO_filelist_20111103.txt is created
+2019-12-22 15:07:48.577736: ../DSO_lists/SDO_filelist_20111104.txt is created
+2019-12-22 15:07:53.932411: ../DSO_lists/SDO_filelist_20111105.txt is created
+2019-12-22 15:07:58.094275: ../DSO_lists/SDO_filelist_20111106.txt is created
+2019-12-22 15:08:02.244172: ../DSO_lists/SDO_filelist_20111107.txt is created
+2019-12-22 15:08:07.016404: ../DSO_lists/SDO_filelist_20111108.txt is created
+2019-12-22 15:08:10.022362: ../DSO_lists/SDO_filelist_20111109.txt is created
+2019-12-22 15:08:13.815213: ../DSO_lists/SDO_filelist_20111110.txt is created
+2019-12-22 15:08:18.085788: ../DSO_lists/SDO_filelist_20111111.txt is created
+2019-12-22 15:08:28.035168: ../DSO_lists/SDO_filelist_20111112.txt is created
+2019-12-22 15:08:39.261132: ../DSO_lists/SDO_filelist_20111113.txt is created
+2019-12-22 15:08:47.625752: ../DSO_lists/SDO_filelist_20111114.txt is created
+2019-12-22 15:08:58.083772: ../DSO_lists/SDO_filelist_20111115.txt is created
+2019-12-22 15:09:04.832715: ../DSO_lists/SDO_filelist_20111116.txt is created
+2019-12-22 15:09:11.014176: ../DSO_lists/SDO_filelist_20111117.txt is created
+2019-12-22 15:09:20.025072: ../DSO_lists/SDO_filelist_20111118.txt is created
+2019-12-22 15:09:23.812933: IncompleteRead(0 bytes read), https://sdo.gsfc.nasa.gov/assets/img/browse/2011/11/19/
+
+2019-12-22 15:09:31.508343: ../DSO_lists/SDO_filelist_20111120.txt is created
+2019-12-22 15:09:36.838083: ../DSO_lists/SDO_filelist_20111121.txt is created
+2019-12-22 15:09:39.305483: Remote end closed connection without response, https://sdo.gsfc.nasa.gov/assets/img/browse/2011/11/22/
+
+2019-12-22 15:09:47.239256: ../DSO_lists/SDO_filelist_20111123.txt is created
+2019-12-22 15:09:56.413710: ../DSO_lists/SDO_filelist_20111124.txt is created
+2019-12-22 15:10:05.464494: ../DSO_lists/SDO_filelist_20111125.txt is created
+2019-12-22 15:10:15.204435: ../DSO_lists/SDO_filelist_20111126.txt is created
+2019-12-22 15:10:23.002570: ../DSO_lists/SDO_filelist_20111127.txt is created
+2019-12-22 15:10:31.181687: ../DSO_lists/SDO_filelist_20111128.txt is created
+2019-12-22 15:10:39.859469: ../DSO_lists/SDO_filelist_20111129.txt is created
+2019-12-22 15:10:48.067508: ../DSO_lists/SDO_filelist_20111130.txt is created
+2019-12-22 15:10:55.175491: ../DSO_lists/SDO_filelist_20111201.txt is created
+2019-12-22 15:11:01.210344: ../DSO_lists/SDO_filelist_20111202.txt is created
+2019-12-22 15:11:08.784080: ../DSO_lists/SDO_filelist_20111203.txt is created
+2019-12-22 15:11:16.254095: ../DSO_lists/SDO_filelist_20111204.txt is created
+2019-12-22 15:11:23.868723: ../DSO_lists/SDO_filelist_20111205.txt is created
+2019-12-22 15:11:38.918457: ../DSO_lists/SDO_filelist_20111206.txt is created
+2019-12-22 15:11:49.952933: ../DSO_lists/SDO_filelist_20111207.txt is created
+2019-12-22 15:11:57.494754: ../DSO_lists/SDO_filelist_20111208.txt is created
+2019-12-22 15:12:05.226069: ../DSO_lists/SDO_filelist_20111209.txt is created
+2019-12-22 15:12:15.890539: ../DSO_lists/SDO_filelist_20111210.txt is created
+2019-12-22 15:12:23.729562: ../DSO_lists/SDO_filelist_20111211.txt is created
+2019-12-22 15:12:32.317585: ../DSO_lists/SDO_filelist_20111212.txt is created
+2019-12-22 15:12:36.334838: IncompleteRead(0 bytes read), https://sdo.gsfc.nasa.gov/assets/img/browse/2011/12/13/
+
+2019-12-22 15:12:42.666896: ../DSO_lists/SDO_filelist_20111214.txt is created
+2019-12-22 15:12:50.944748: ../DSO_lists/SDO_filelist_20111215.txt is created
+2019-12-22 15:12:58.435705: ../DSO_lists/SDO_filelist_20111216.txt is created
+2019-12-22 15:13:04.536384: ../DSO_lists/SDO_filelist_20111217.txt is created
+2019-12-22 15:13:11.171630: ../DSO_lists/SDO_filelist_20111218.txt is created
+2019-12-22 15:13:18.901947: ../DSO_lists/SDO_filelist_20111219.txt is created
+2019-12-22 15:13:25.528218: ../DSO_lists/SDO_filelist_20111220.txt is created
+2019-12-22 15:13:32.760868: ../DSO_lists/SDO_filelist_20111221.txt is created
+2019-12-22 15:13:39.095918: ../DSO_lists/SDO_filelist_20111222.txt is created
+2019-12-22 15:13:44.257110: IncompleteRead(584853 bytes read), https://sdo.gsfc.nasa.gov/assets/img/browse/2011/12/23/
+
+2019-12-22 15:13:51.649333: ../DSO_lists/SDO_filelist_20111224.txt is created
+2019-12-22 15:13:58.303528: ../DSO_lists/SDO_filelist_20111225.txt is created
+2019-12-22 15:14:06.790820: ../DSO_lists/SDO_filelist_20111226.txt is created
+2019-12-22 15:14:23.873116: Remote end closed connection without response, https://sdo.gsfc.nasa.gov/assets/img/browse/2011/12/27/
+
+2019-12-22 15:14:31.262347: ../DSO_lists/SDO_filelist_20111228.txt is created
+2019-12-22 15:14:49.801743: ../DSO_lists/SDO_filelist_20111229.txt is created
+2019-12-22 15:14:54.852232: IncompleteRead(0 bytes read), https://sdo.gsfc.nasa.gov/assets/img/browse/2011/12/30/
+
+2019-12-22 15:15:04.212188: ../DSO_lists/SDO_filelist_20111231.txt is created
+2019-12-22 15:15:12.231732: ../DSO_lists/SDO_filelist_20120101.txt is created
+2019-12-22 15:15:15.962750: Remote end closed connection without response, https://sdo.gsfc.nasa.gov/assets/img/browse/2012/01/02/
+
+2019-12-22 15:15:22.901185: ../DSO_lists/SDO_filelist_20120103.txt is created
+2019-12-22 15:15:29.212299: ../DSO_lists/SDO_filelist_20120104.txt is created
+2019-12-22 15:15:38.997121: ../DSO_lists/SDO_filelist_20120105.txt is created
+2019-12-22 15:15:45.110763: ../DSO_lists/SDO_filelist_20120106.txt is created
+2019-12-22 15:15:52.384303: ../DSO_lists/SDO_filelist_20120107.txt is created
+2019-12-22 15:15:59.358643: ../DSO_lists/SDO_filelist_20120108.txt is created
+2019-12-22 15:16:09.252172: ../DSO_lists/SDO_filelist_20120109.txt is created
+2019-12-22 15:16:16.665338: ../DSO_lists/SDO_filelist_20120110.txt is created
+2019-12-22 15:16:24.139341: ../DSO_lists/SDO_filelist_20120111.txt is created
+2019-12-22 15:16:32.633615: ../DSO_lists/SDO_filelist_20120112.txt is created
+2020-09-06 22:36:54.363007: ../DSO_lists/SDO_filelist_20100401.txt is created
+2020-09-06 22:36:55.704114: ../DSO_lists/SDO_filelist_20100402.txt is created
+2020-09-06 22:36:56.719068: ../DSO_lists/SDO_filelist_20100403.txt is created
+2020-09-06 22:36:57.644858: ../DSO_lists/SDO_filelist_20100404.txt is created
+2020-09-06 22:36:58.999675: ../DSO_lists/SDO_filelist_20100405.txt is created
+2020-09-06 22:36:59.971501: ../DSO_lists/SDO_filelist_20100406.txt is created
+2020-09-06 22:37:00.930369: ../DSO_lists/SDO_filelist_20100407.txt is created
+2020-09-06 22:37:01.940478: ../DSO_lists/SDO_filelist_20100408.txt is created
+2020-09-06 22:37:02.872551: ../DSO_lists/SDO_filelist_20100409.txt is created
+2020-09-06 22:37:03.827063: ../DSO_lists/SDO_filelist_20100410.txt is created
+2020-09-06 22:37:04.733060: ../DSO_lists/SDO_filelist_20100411.txt is created
+2020-09-06 22:37:05.843149: ../DSO_lists/SDO_filelist_20100412.txt is created
+2020-09-06 22:37:06.894296: ../DSO_lists/SDO_filelist_20100413.txt is created
+2020-09-06 22:37:08.935143: ../DSO_lists/SDO_filelist_20100414.txt is created
+2020-09-06 22:37:09.862582: ../DSO_lists/SDO_filelist_20100415.txt is created
+2020-09-06 22:37:10.853248: ../DSO_lists/SDO_filelist_20100416.txt is created
+2020-09-06 22:37:11.903767: ../DSO_lists/SDO_filelist_20100417.txt is created
+2020-09-06 22:37:12.945933: ../DSO_lists/SDO_filelist_20100418.txt is created
+2020-09-06 22:37:13.920298: ../DSO_lists/SDO_filelist_20100419.txt is created
+2020-09-06 22:37:14.877259: ../DSO_lists/SDO_filelist_20100420.txt is created
+2020-09-06 22:37:15.877878: ../DSO_lists/SDO_filelist_20100421.txt is created
+2020-09-06 22:38:14.223346 ::: ../SDO_filelists/SDO_filelist_20120101.txt is laready exist.
+2020-09-06 22:38:16.967336: ../SDO_filelists/SDO_filelist_20120102.txt is created
+2020-09-06 22:38:17.018695 ::: ../SDO_filelists/SDO_filelist_20120103.txt is laready exist.
+2020-09-06 22:38:17.024438 ::: ../SDO_filelists/SDO_filelist_20120104.txt is laready exist.
+2020-09-06 22:38:17.030268 ::: ../SDO_filelists/SDO_filelist_20120105.txt is laready exist.
+2020-09-06 22:38:17.035592 ::: ../SDO_filelists/SDO_filelist_20120106.txt is laready exist.
+2020-09-06 22:38:17.046216 ::: ../SDO_filelists/SDO_filelist_20120107.txt is laready exist.
+2020-09-06 22:38:17.055638 ::: ../SDO_filelists/SDO_filelist_20120108.txt is laready exist.
+2020-09-06 22:38:17.062200 ::: ../SDO_filelists/SDO_filelist_20120109.txt is laready exist.
+2020-09-06 22:38:17.068162 ::: ../SDO_filelists/SDO_filelist_20120110.txt is laready exist.
+2020-09-06 22:38:17.072851 ::: ../SDO_filelists/SDO_filelist_20120111.txt is laready exist.
+2020-09-06 22:38:17.078545 ::: ../SDO_filelists/SDO_filelist_20120112.txt is laready exist.
+2020-09-06 22:38:20.250102: ../SDO_filelists/SDO_filelist_20120113.txt is created
+2020-09-06 22:38:23.083353: ../SDO_filelists/SDO_filelist_20120114.txt is created
+2020-09-06 22:38:25.959297: ../SDO_filelists/SDO_filelist_20120115.txt is created
+2020-09-06 22:38:28.684957: ../SDO_filelists/SDO_filelist_20120116.txt is created
+2020-09-06 22:38:31.432016: ../SDO_filelists/SDO_filelist_20120117.txt is created
+2020-09-06 22:38:34.155868: ../SDO_filelists/SDO_filelist_20120118.txt is created
+2020-09-06 22:38:36.976215: ../SDO_filelists/SDO_filelist_20120119.txt is created
+2020-09-06 22:38:40.771534: ../SDO_filelists/SDO_filelist_20120120.txt is created
+2020-09-06 22:38:43.505253: ../SDO_filelists/SDO_filelist_20120121.txt is created
+2020-09-06 22:38:46.366205: ../SDO_filelists/SDO_filelist_20120122.txt is created
+2020-09-06 22:38:50.585136: ../SDO_filelists/SDO_filelist_20120123.txt is created
+2020-09-06 22:38:53.216831: ../SDO_filelists/SDO_filelist_20120124.txt is created
+2020-09-06 22:38:55.798077: ../SDO_filelists/SDO_filelist_20120125.txt is created
+2020-09-06 22:38:58.467679: ../SDO_filelists/SDO_filelist_20120126.txt is created
+2020-09-06 22:39:01.130070: ../SDO_filelists/SDO_filelist_20120127.txt is created
+2020-09-06 22:39:03.927279: ../SDO_filelists/SDO_filelist_20120128.txt is created
+2020-09-06 22:39:07.136529: ../SDO_filelists/SDO_filelist_20120129.txt is created
+2020-09-06 22:39:10.023051: ../SDO_filelists/SDO_filelist_20120130.txt is created
+2020-09-06 22:39:12.578045: ../SDO_filelists/SDO_filelist_20120131.txt is created
+2020-09-06 22:39:16.037412: ../SDO_filelists/SDO_filelist_20120201.txt is created
+2020-09-06 22:39:18.979395: ../SDO_filelists/SDO_filelist_20120202.txt is created
+2020-09-06 22:39:22.044401: ../SDO_filelists/SDO_filelist_20120203.txt is created
+2020-09-06 22:39:25.233950: ../SDO_filelists/SDO_filelist_20120204.txt is created
+2020-09-06 22:39:28.151075: ../SDO_filelists/SDO_filelist_20120205.txt is created
+2020-09-06 22:39:31.111265: ../SDO_filelists/SDO_filelist_20120206.txt is created
+2020-09-06 22:39:34.192753: ../SDO_filelists/SDO_filelist_20120207.txt is created
+2020-09-06 22:39:37.083814: ../SDO_filelists/SDO_filelist_20120208.txt is created
+2020-09-06 22:39:40.287374: ../SDO_filelists/SDO_filelist_20120209.txt is created
+2020-09-06 22:39:43.418742: ../SDO_filelists/SDO_filelist_20120210.txt is created
+2020-09-06 22:39:46.342060: ../SDO_filelists/SDO_filelist_20120211.txt is created
+2020-09-06 22:39:52.434832: ../SDO_filelists/SDO_filelist_20120212.txt is created
+2020-09-06 22:39:56.853552: ../SDO_filelists/SDO_filelist_20120213.txt is created
+2020-09-06 22:40:02.148439: ../SDO_filelists/SDO_filelist_20120214.txt is created
+2020-09-06 22:40:03.505857: Remote end closed connection without response, https://sdo.gsfc.nasa.gov/assets/img/browse/2012/02/15/
+
+2020-09-06 22:40:06.801289: ../SDO_filelists/SDO_filelist_20120216.txt is created
+2020-09-06 22:40:13.231216: ../SDO_filelists/SDO_filelist_20120217.txt is created
+2020-09-06 22:40:17.858564: ../SDO_filelists/SDO_filelist_20120218.txt is created
+2020-09-06 22:40:22.126367: ../SDO_filelists/SDO_filelist_20120219.txt is created
+2020-09-06 22:40:24.549951: Remote end closed connection without response, https://sdo.gsfc.nasa.gov/assets/img/browse/2012/02/20/
+
+2020-09-06 22:40:29.002495: ../SDO_filelists/SDO_filelist_20120221.txt is created

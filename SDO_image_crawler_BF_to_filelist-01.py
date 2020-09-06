@@ -16,12 +16,12 @@ site = 'https://sdo.gsfc.nasa.gov/assets/img/browse/'
    
 add_log = True
 if add_log == True :
-    log_file = 'SDO_image_list_to_filelist.log'
-    err_log_file = 'SDO_image_list_to_filelist.log'
+    log_file = './log/SDO_image_list_to_filelist.log'
+    err_log_file = './log/SDO_image_list_to_filelist.log'
     
 from dateutil.relativedelta import relativedelta
-p_start_date = datetime(2010, 4, 1) #convert startdate to date type
-p_end_date = datetime(2019, 12, 25)
+p_start_date = datetime(2012, 1, 1) #convert startdate to date type
+p_end_date = datetime(2019, 12, 31)
 
 date_No = 0
 date1 = p_start_date
@@ -35,7 +35,7 @@ while date2 < p_end_date :
     dates.append(date)
     date1 = date2
 
-save_dir_name = '../SDO_lists/'
+save_dir_name = '../SDO_filelists/'
 if not os.path.exists('{0}'.format(save_dir_name)):
     os.makedirs('{0}'.format(save_dir_name))
     print ('*'*80)

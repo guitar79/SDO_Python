@@ -21,62 +21,75 @@ def filename_to_hour(filename):
 site = 'https://sdo.gsfc.nasa.gov/assets/img/browse/'
 targets = ['2048_HMII.jpg','1024_HMII.jpg', '1024_0304.jpg', '1024_4500.jpg', '1024_HMIIB.jpg', '1024_HMIIC.jpg', '1024_0171.jpg', '1024_0131.jpg'] #this tpye of image will be downloading
 
+if not os.path.exists('./log/'):
+    os.makedirs('./log/')
+    print ('*'*80)
+    print ('./log/ is created')
+                
 #%%
-SDO_filelists = sorted(glob(os.path.join('SDO_filelist_*.txt')))
+SDO_filelists = sorted(glob(os.path.join('../SDO_filelists/SDO_filelist_*.txt')))
 for SDO_filelist in SDO_filelists:
     #read_filename = 'SDO_filelist_20120101_20120201.txt'
     read_filename = SDO_filelist
     read_file = open(read_filename,'r')
     raw_lists = read_file.read()
     url_lists = raw_lists.split('\n')
+    #print(url_lists) #debug
     
     read_filename_element1 = read_filename.split('.')
+    #print(read_filename_element1) #debug
+    #break
     read_filename_element2 = read_filename_element1[-2].split('_')
-    startdate = read_filename_element2[-2] #start date
-    enddate = read_filename_element2[-1] #end date
-    time_gap = 1 #time gap
-    request_hour = range(0,24,time_gap) #make list
+    download_date = read_filename_element2[-1] 
+    #print(download_date) #debug
     
-    #variable for calculating date
-    start_date = datetime.date(datetime.strptime(startdate, '%Y%m%d')) #convert startdate to date type
-    end_date = datetime.date(datetime.strptime(enddate, '%Y%m%d')) #convert enddate to date type
-    duration = (end_date - start_date).days #total days for downloading
+    #convert download date to datetime.date type
+    DT_download_date = datetime.date(datetime.strptime(download_date, '%Y%m%d')) 
+    
+    #print(DT_download_date) #debug
+    
+#%%    
     print ('*'*80)
-    print ((duration+1), 'days', int((duration+1)*(24/time_gap)), 'files will be downloaded')
+        
     
-    #%%
-    try : 
-        for url_list in url_lists:
-            filename_element = url_list.split('/')
-            filename = filename_element[-1]
-            for target in(targets):
-                save_folder = target + '_' + filename_to_hour(filename).strftime('%Y') + '/'
-                if not os.path.exists(save_folder):
-                    os.makedirs(save_folder)
-                    print ('*'*80)
-                    print (save_folder, 'is created')
-                    
-                if (filename[(-len(target)):] == target) \
-                    and int(filename_to_hour(filename).strftime('%H')) in(request_hour) :
-                    try : 
-                        print ('Trying %s' % filename)
-                        if os.path.exists('%s/%s' % (save_folder, filename)):
-                            print ('*'*40)
-                            print (filename + 'is exist')
-                        else :
-                            urllib.request.urlretrieve(url_list, '%s/%s' % (save_folder, filename))
-                            print ('*'*60)
-                            print ('Downloading' + filename)
+    for url_list in url_lists[1:]:
+        try : 
+            #'https://sdo.gsfc.nasa.gov/assets/img/browse/2010/05/19/20100519_091114_1024_0193.jpg',
+            SDO_url_element = url_list.split('/')
+            SDO_filename = SDO_url_element[-1]
+            SDO_filename_element = SDO_filename.split('_')
+            #print(filename) #debug
+            
+            save_folder = "../SDO_images/{}/{}/{}/{}/".format(SDO_filename_element[0][:4], 
+                                                           SDO_filename_element[0],
+                                                           SDO_filename_element[-1][:4],
+                                                           SDO_filename_element[-2])
+            #print(save_folder) #debug
+            
+            if not os.path.exists(save_folder):
+                os.makedirs(save_folder)
+                print ('='*80)
+                print (save_folder, 'is created')
+                
+                             
+            try : 
+                print ('Trying {}'.format(SDO_filename))
+                if os.path.exists('{}{}'.format(save_folder, SDO_filename)):
+                    print ('#'*40)
+                    print ('{} is exist'.format(SDO_filename))
+                else :
+                    print ('*'*60)
+                    print ('Downloading {}'.format(SDO_filename))
+                    urllib.request.urlretrieve(url_list, '{}{}'.format(save_folder, SDO_filename))
                         
-                    except Exception as err : 
-                        with open('downloader_errorlog_{0}_{1}.log'.format(startdate, enddate), "a") as downloader_errorlog :
-                            downloader_errorlog.write("{0}: {1}, {2}\n".format(datetime.now(), err, target))
-                        print ('*'*80)
-                        print (err, url_list)
-                else:
-                    print ('Skipping ' + filename)
-    except Exception as err : 
-        with open('downloader_errorlog_{0}_{1}.log'.format(startdate, enddate), "a") as downloader_errorlog :
-            downloader_errorlog.write("{0}: {1}, {2}\n".format(datetime.now(), err, url_list))
-        print ('*'*80)
-        print(err, url_list)
+            except Exception as err : 
+                with open('./log/download_error_{0}.log'.format(read_filename_element1[-2][-21:]), "a") as download_errorlog :
+                    download_errorlog.write("{0}: {1}, {2}\n".format(datetime.now(), err, url_list))
+                    print ('#'*40)
+                    print (err, url_list)
+            
+        except Exception as err : 
+            with open('./log/download_error_{0}.log'.format(read_filename_element1[-2][-21:]), "a") as download_errorlog :
+                download_errorlog.write("{0}: {1}, {2}\n".format(datetime.now(), err, SDO_filelist))
+            print ('#'*40)
+            print(err, SDO_filelist)
