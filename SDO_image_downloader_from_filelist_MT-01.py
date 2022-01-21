@@ -9,7 +9,7 @@
 
 from glob import glob
 import os
-import SDO_utility
+import SDO_utilities
 
 ################################################
 ### Multiprocessing instead of multithreading
@@ -76,7 +76,7 @@ for SDO_filelist in SDO_filelists:
         for SDO_filelist in SDO_filelists[batch*num_cpu:(batch+1)*num_cpu] :
             print('url .. {0}'.format(SDO_filelist))
             #myMP.run(f, fullname)
-            myMP.run(SDO_utility.SDO_image_downloader_from_filelist, SDO_filelist, targets, request_hour)
+            myMP.run(SDO_utilities.SDO_image_downloader_from_filelist, SDO_filelist, targets, request_hour)
         print("Batch " + str(batch))
         myMP.wait()
         values.append(myMP.wait())

@@ -9,7 +9,7 @@
 
 import os
 from datetime import datetime
-import SDO_utility
+import SDO_utilities
 
 # some variables for downloading (site, file, perid and time gap, etc.)
 site = 'https://sdo.gsfc.nasa.gov/assets/img/browse/'
@@ -96,10 +96,8 @@ for batch in range(num_batches):
     myMP.restart()
     for date in dates[batch*num_cpu:(batch+1)*num_cpu] :
         print('date : {0}'.format(date))
-        myMP.run(SDO_utility.SDO_image_list_to_filelist_1day, save_dir_name, date)
+        myMP.run(SDO_utilities.SDO_image_list_to_filelist_1day, save_dir_name, date)
     print("Batch " + str(batch))
     myMP.wait()
     #values.append(myMP.wait())
     print("OK batch" + str(batch))
-            
-    

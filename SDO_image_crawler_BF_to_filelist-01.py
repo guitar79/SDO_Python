@@ -9,19 +9,21 @@
 
 import os
 from datetime import datetime
-import SDO_utility
+import SDO_utilities
 
 # some variables for downloading (site, file, perid and time gap, etc.)
 site = 'https://sdo.gsfc.nasa.gov/assets/img/browse/'
-   
-add_log = True
-if add_log == True :
-    log_file = './log/SDO_image_list_to_filelist.log'
-    err_log_file = './log/SDO_image_list_to_filelist.log'
+
+
+log_dir = "logs/"
+log_file = "{}{}.log".format(log_dir, os.path.basename(__file__)[:-3])
+err_log_file = "{}{}_err.log".format(log_dir, os.path.basename(__file__)[:-3])
+print ("log_file: {}".format(log_file))
+print ("err_log_file: {}".format(err_log_file))
     
 from dateutil.relativedelta import relativedelta
-p_start_date = datetime(2012, 1, 1) #convert startdate to date type
-p_end_date = datetime(2019, 12, 31)
+p_start_date = datetime(2021, 1, 1) #convert startdate to date type
+p_end_date = datetime(2021, 12, 31)
 
 date_No = 0
 date1 = p_start_date
@@ -45,5 +47,5 @@ else :
     print ('{0} is exist'.format(save_dir_name))
         
 for date in dates:
-    SDO_utility.SDO_image_list_to_filelist_1day(save_dir_name, date)
+    SDO_utilities.SDO_image_list_to_filelist_1day(save_dir_name, date)
     

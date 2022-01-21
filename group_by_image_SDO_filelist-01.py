@@ -10,7 +10,7 @@
 from glob import glob
 from datetime import datetime
 import os
-import SDO_utility
+import SDO_utilities
 
 # some variables for downloading (site, file, perid and time gap, etc.)
 site = 'https://sdo.gsfc.nasa.gov/assets/img/browse/'
@@ -67,22 +67,22 @@ for target in targets :
                 filename_el = filename.split('_')
                                 
                 if target == '{0}_{1}'.format(filename_el[-2], filename_el[-1]) \
-                    and int(SDO_utility.filename_to_hour(filename).strftime('%H')) in request_hour :
+                    and int(SDO_utilities.filename_to_hour(filename).strftime('%H')) in request_hour :
 
                     print ('adding %s' % filename)
                     results += '{0}\n'.format(url_list)
-                    SDO_utility.write_log(log_file, '{1}: {0} is added.'\
+                    SDO_utilities.write_log(log_file, '{1}: {0} is added.'\
                           .format(filename, datetime.now()))
                 else:
                     print ('Skipping ' + filename)
                     
         except Exception as err : 
-            SDO_utility.write_log(err_log_file, '{2}: {0}, {1}'\
+            SDO_utilities.write_log(err_log_file, '{2}: {0}, {1}'\
                   .format(err, url_list, datetime.now()))
                 
     with open('{0}{1}.txt'.format(save_dir_name, target), 'w') as f:
         #write
     	f.write(results)
-    SDO_utility.write_log(log_file, '{2} : {0}{1}.txt is created'\
+    SDO_utilities.write_log(log_file, '{2} : {0}{1}.txt is created'\
           .format(save_dir_name, target, datetime.now()))
                     

@@ -11,7 +11,7 @@ from glob import glob
 from datetime import datetime
 import pandas as pd
 import os
-import SDO_utility
+import SDO_utilities
 
 # some variables for downloading (site, file, perid and time gap, etc.)
 site = 'https://sdo.gsfc.nasa.gov/assets/img/browse/'
@@ -64,15 +64,15 @@ if add_log == True :
 for target in targets :
     
     if os.path.isfile('{0}{1}.csv'.format(save_dir_name, target)) :
-        SDO_utility.write_log(log_file, '{2} : {0}{1}.txt is already exist.'\
+        SDO_utilities.write_log(log_file, '{2} : {0}{1}.txt is already exist.'\
           .format(save_dir_name, target, datetime.now()))
     else :
         try : 
             ser_target = ser[ser.str.contains(target)]
             ser_target.to_csv('{0}{1}.csv'.format(save_dir_name, target))
-            SDO_utility.write_log(log_file, '{2} : {0}{1}.txt is created.'\
+            SDO_utilities.write_log(log_file, '{2} : {0}{1}.txt is created.'\
               .format(save_dir_name, target, datetime.now()))
                         
         except Exception as err : 
-            SDO_utility.write_log(err_log_file, '{2}: {0}, {1}'\
+            SDO_utilities.write_log(err_log_file, '{2}: {0}, {1}'\
                   .format(err, target, datetime.now()))

@@ -9,7 +9,7 @@
 
 from glob import glob
 import os
-import SDO_utility
+import SDO_utilities
 
 # some variables for downloading (site, file, perid and time gap, etc.)
 site = 'https://sdo.gsfc.nasa.gov/assets/img/browse/'
@@ -33,4 +33,4 @@ for SDO_filelist in SDO_filelists:
     request_hour = range(0,24,time_gap) #make list
     
     for url_list in url_lists:
-        SDO_utility.SDO_image_downloader_from_filelist(url_list, targets, request_hour)
+        SDO_utilities.SDO_image_downloader_from_filelist(url_list, targets, request_hour)

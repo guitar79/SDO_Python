@@ -10,7 +10,7 @@
 from glob import glob
 import os
 from datetime import datetime
-import SDO_utility
+import SDO_utilities
 import urllib.request
 import urllib2.request
 
