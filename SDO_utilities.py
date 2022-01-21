@@ -15,6 +15,10 @@ site = 'https://sdo.gsfc.nasa.gov/assets/img/browse/'
     
 from datetime import datetime
 
+
+# =============================================================================
+# for log file
+# =============================================================================
 def write_log2(log_file, log_str):
     import os
     with open(log_file, 'a') as log_f:
@@ -29,11 +33,68 @@ def write_log(log_file, log_str):
     with open(log_file, 'a') as f:
         f.write(msg + '\n')
         
-#for checking time
+# =============================================================================
+# for checking time
+# =============================================================================
+from datetime import datetime
 cht_start_time = datetime.now()
-def print_working_time():
+def print_working_time(cht_start_time):
     working_time = (datetime.now() - cht_start_time) #total days for downloading
     return print('working time ::: %s' % (working_time))
+
+
+# =============================================================================
+
+# =============================================================================
+def getFullnameListOfallFiles(dirName):
+    ##############################################3
+    import os
+    # create a list of file and sub directories 
+    # names in the given directory 
+    listOfFile = sorted(os.listdir(dirName))
+    allFiles = list()
+    # Iterate over all the entries
+    for entry in listOfFile:
+        # Create full path
+        fullPath = os.path.join(dirName, entry)
+        # If entry is a directory then get the list of files in this directory 
+        if os.path.isdir(fullPath):
+            allFiles = allFiles + getFullnameListOfallFiles(fullPath)
+        else:
+            allFiles.append(fullPath)
+                
+    return allFiles
+
+# =============================================================================
+
+# =============================================================================
+def getFullnameListOfallsubDirs1(dirName):
+    ##############################################3
+    import os
+    allFiles = list()
+    for file in sorted(os.listdir(dirName)):
+        d = os.path.join(dirName, file)
+        allFiles.append(d)
+        if os.path.isdir(d):
+            allFiles.extend(getFullnameListOfallsubDirs1(d))
+
+    return allFiles
+
+# =============================================================================
+
+# =============================================================================
+def getFullnameListOfallsubDirs(dirName):
+    ##############################################3
+    import os
+    allFiles = list()
+    for it in os.scandir(dirName):
+        if it.is_dir():
+            allFiles.append(it.path)
+            allFiles.extend(getFullnameListOfallsubDirs(it))
+
+    return allFiles
+
+
 
 def filename_to_hour(filename):
     fileinfo = filename.split('_')
