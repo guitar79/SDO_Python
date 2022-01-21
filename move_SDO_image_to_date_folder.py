@@ -7,10 +7,9 @@
 # file name structure : 20170228_231038_1024_MHII.jpg
 # conda install beautifulsoup
 
-from glob import glob
 from datetime import datetime
 import os
-import urllib.request
+import shutil 
 import SDO_utilities
 
 log_dir = "logs/"
@@ -29,73 +28,35 @@ chls = ['HMII', 'HMIB', 'HMIBC', 'HMIIC', 'HMIIF',
         '0131', '0171', '0304', '0094'
         '211193171', '211193171n', '211193171rg']
 
+save_base_dr = "../browse/"
+if not os.path.exists(save_base_dr):
+    os.makedirs(save_base_dr)
+    print ('{} is created...'.format(save_base_dr))
+    
 for dir in chls :
     #dir = chls[0]
-    base_dr = "../4096_{}".format(dir)
+    base_dr = "../4096_{}/".format(dir)
     fullnames = SDO_utilities.getFullnameListOfallFiles(base_dr)
-    SDO_filelists = sorted(glob(os.path.join('../SDO_filelists/SDO_filelist_*.txt')))
-    for SDO_filelist in SDO_filelists:
-        #read_filename = 'SDO_filelist_20120101_20120201.txt'
-        read_filename = SDO_filelist
-        read_file = open(read_filename,'r')
-        raw_lists = read_file.read()
-        url_lists = raw_lists.split('\n')
-        #print(url_lists) #debug
-        
-        read_filename_element1 = read_filename.split('.')
-        #print(read_filename_element1) #debug
-        #break
-        read_filename_element2 = read_filename_element1[-2].split('_')
-        download_date = read_filename_element2[-1] 
-        #print(download_date) #debug
-        
-        #convert download date to datetime.date type
-        DT_download_date = datetime.date(datetime.strptime(download_date, '%Y%m%d')) 
-        
-        #print(DT_download_date) #debug
-        
-    #%%    
-        print ('*'*80)
-        
     
-    for url_list in url_lists[1:]:
+    for fullname in fullnames :
+        #fullname  = fullnames[0]
+        fullname_el = fullname.split("/")
+        filename = fullname_el[-1]
+        new_foldername = "{}{}/{}/{}/".format(save_base_dr, filename[0:4], 
+                                              filename[4:6], filename[6:8])
+        if not os.path.exists(new_foldername):
+            os.makedirs(new_foldername)
+            print ('{} is created...'.format(new_foldername))
         try : 
-            #'https://sdo.gsfc.nasa.gov/assets/img/browse/2010/05/19/20100519_091114_1024_0193.jpg',
-            SDO_url_element = url_list.split('/')
-            SDO_filename = SDO_url_element[-1]
-            SDO_filename_element = SDO_filename.split('_')
-            #print(filename) #debug
-            
-            save_folder = "../SDO_images/{}/{}/{}/{}/".format(SDO_filename_element[0][:4], 
-                                                           SDO_filename_element[0],
-                                                           SDO_filename_element[-1][:4],
-                                                           SDO_filename_element[-2])
-            #print(save_folder) #debug
-            
-            if not os.path.exists(save_folder):
-                os.makedirs(save_folder)
-                print ('='*80)
-                print (save_folder, 'is created')
+        
+            if os.path.exists('{0}{1}'.format(new_foldername, filename)):
+                SDO_utilities.write_log(log_file, 
+                     '{0}{1} is already exist...'.format(new_foldername, filename))
+            else :
+                shutil.move(r"{}".format(fullname), r"{}{}".format(new_foldername, filename))
+                print ("move {}".format(fullname), "{}{}".format(new_foldername, filename))
                 
-                             
-            try : 
-                print ('Trying {}'.format(SDO_filename))
-                if os.path.exists('{}{}'.format(save_folder, SDO_filename)):
-                    print ('#'*40)
-                    print ('{} is exist'.format(SDO_filename))
-                else :
-                    print ('*'*60)
-                    print ('Downloading {}'.format(SDO_filename))
-                    urllib.request.urlretrieve(url_list, '{}{}'.format(save_folder, SDO_filename))
-                        
-            except Exception as err : 
-                with open('./log/download_error_{0}.log'.format(read_filename_element1[-2][-21:]), "a") as download_errorlog :
-                    download_errorlog.write("{0}: {1}, {2}\n".format(datetime.now(), err, url_list))
-                    print ('#'*40)
-                    print (err, url_list)
-            
         except Exception as err : 
-            with open('./log/download_error_{0}.log'.format(read_filename_element1[-2][-21:]), "a") as download_errorlog :
-                download_errorlog.write("{0}: {1}, {2}\n".format(datetime.now(), err, SDO_filelist))
-            print ('#'*40)
-            print(err, SDO_filelist)
+            print("X"*60)
+            SDO_utilities.write_log(err_log_file, \
+                 '{2} ::: {0} with move {1} '.format(err, fullname, datetime.now()))
