@@ -11,15 +11,15 @@ import os
 from datetime import datetime
 import SDO_utilities
 
-# some variables for downloading (site, file, perid and time gap, etc.)
-site = 'https://sdo.gsfc.nasa.gov/assets/img/browse/'
-
 log_dir = "logs/"
 log_file = "{}{}.log".format(log_dir, os.path.basename(__file__)[:-3])
 err_log_file = "{}{}_err.log".format(log_dir, os.path.basename(__file__)[:-3])
 print ("log_file: {}".format(log_file))
 print ("err_log_file: {}".format(err_log_file))
-    
+
+# some variables for downloading (site, file, perid and time gap, etc.)
+site = 'https://sdo.gsfc.nasa.gov/assets/img/browse/'
+   
 from dateutil.relativedelta import relativedelta
 p_start_date = datetime(2021, 1, 1) #convert startdate to date type
 p_end_date = datetime(2021, 12, 31)
