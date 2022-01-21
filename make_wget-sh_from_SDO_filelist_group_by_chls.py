@@ -24,6 +24,7 @@ site = 'https://sdo.gsfc.nasa.gov/assets/img/browse/'
 
 #this tpye of image will be added
 img_sizes = [4096, 3072, 2048, 1024, 512]
+img_sizes = [4096]
 chls = ['0131', '0171', '0193', '0211',
         '0304', '0094', '0335', '1600', '1700', '0211', '4500', 
         'HMIB', 'HMIBC', 'HMID', 'HMII', 'HMIIC', 'HMIIF']
@@ -34,8 +35,8 @@ for img_size in img_sizes :
     for chl in chls : 
         targets.append('{0}_{1}'.format(str(img_size), chl))
   
-filelist_dir_name = '../SDO_filelists_by_date/'
-save_dir_name = '../SDO_filelists_by_chls/'
+filelist_dir_name = '../SDO_filelists_by_chls/'
+save_dir_name = '../wget_shby_chls/'
 if not os.path.exists(save_dir_name):
     os.makedirs(save_dir_name)
     print ('*'*80)
