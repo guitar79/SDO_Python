@@ -38,8 +38,14 @@ for dir in chls :
     base_dr = "../4096_{}/".format(dir)
     fullnames = SDO_utilities.getFullnameListOfallFiles(base_dr)
     
+    n = 0    
     for fullname in fullnames :
         #fullname  = fullnames[0]
+        n += 1
+        print('#'*40,
+            "\n{2:.01f}%  ({0}/{1}) {3}".format(n, len(fullnames), (n/len(fullnames))*100, os.path.basename(__file__)))
+        print ("Starting...   fullname: {}".format(fullname))
+        
         fullname_el = fullname.split("/")
         filename = fullname_el[-1]
         new_foldername = "{}{}/{}/{}/".format(save_base_dr, filename[0:4], 
