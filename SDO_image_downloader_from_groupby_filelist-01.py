@@ -13,6 +13,13 @@ import urllib.request
 import SDO_utilities
 import csv
 
+#this tpye of image will be added
+img_sizes = [4096, 3072, 2048, 1024, 512]
+chls = ['0131', '0171', '0193', '0211',
+        '0304', '0094', '0335', '1600', '1700', '0211', '4500', 
+        'HMIB', 'HMIBC', 'HMID', 'HMII', 'HMIIC', 'HMIIF']
+        #'211193171', '211193171n', '211193171rg']
+        
 # some variables for downloading (site, file, perid and time gap, etc.)
                         
 filelist_dir_name = '../SDO_list_groupby/'
