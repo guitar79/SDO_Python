@@ -25,9 +25,7 @@ save_dir_name = '../SDO_images/'
 SDO_filelists_surffix = sorted(glob(os.path.join('{}SDO_filelist_{}*.txt'.format(filelist_dir_name, suffix))))
 print(SDO_filelists_surffix)
 
-
-     
-        
+   
 for SDO_filelist_surffix in SDO_filelists_surffix :
 
     read_filename = SDO_filelist_surffix

@@ -65,23 +65,25 @@ class Multiprocessor():
 myMP = Multiprocessor()
 num_cpu = 365
 
+log_dir = "logs/"
+log_file = "{}{}.log".format(log_dir, os.path.basename(__file__)[:-3])
+err_log_file = "{}{}_err.log".format(log_dir, os.path.basename(__file__)[:-3])
+print ("log_file: {}".format(log_file))
+print ("err_log_file: {}".format(err_log_file))
+    
 from dateutil.relativedelta import relativedelta
-p_start_date = datetime(2021, 1, 17) #convert startdate to date type
-p_end_date = datetime(2022, 1, 20)
+p_start_date = datetime(2021, 1, 1) #convert startdate to date type
+p_end_date = datetime(2021, 12, 31)
 
-date_No = 0
+dates = [p_start_date]
 date1 = p_start_date
-date2 = p_start_date
-dates = []
-while date2 < p_end_date : 
-    date_No += 1
-    date2 = date1 + relativedelta(days=1)
-    date1_strf = date1.strftime('%Y%m%d')
-    date = (date1_strf, date_No)
-    dates.append(date)
-    date1 = date2
+while date1 < p_end_date : 
+    date1 += relativedelta(days=1)
+    dates.append(date1)    
 
-save_dir_name = '../SDO_lists/'
+print(dates)
+
+save_dir_name = '../SDO_filelists/'
 if not os.path.exists('{0}'.format(save_dir_name)):
     os.makedirs('{0}'.format(save_dir_name))
     print ('*'*80)

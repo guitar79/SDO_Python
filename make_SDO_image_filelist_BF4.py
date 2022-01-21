@@ -24,17 +24,13 @@ from dateutil.relativedelta import relativedelta
 p_start_date = datetime(2021, 1, 1) #convert startdate to date type
 p_end_date = datetime(2021, 12, 31)
 
-date_No = 0
+dates = [p_start_date]
 date1 = p_start_date
-date2 = p_start_date
-dates = []
-while date2 < p_end_date : 
-    date_No += 1
-    date2 = date1 + relativedelta(days=1)
-    date1_strf = date1.strftime('%Y%m%d')
-    date = (date1_strf, date_No)
-    dates.append(date)
-    date1 = date2
+while date1 < p_end_date : 
+    date1 += relativedelta(days=1)
+    dates.append(date1)    
+
+print(dates)
 
 save_dir_name = '../SDO_filelists/'
 if not os.path.exists('{0}'.format(save_dir_name)):
@@ -45,5 +41,52 @@ else :
     print ('*'*80)
     print ('{0} is exist'.format(save_dir_name))
         
-for date in dates:
-    SDO_utilities.SDO_image_list_to_filelist_1day(save_dir_name, date)
+for download_date in dates:
+    #download_date = dates[0]
+
+    if os.path.isfile("{0}SDO_filelist_{1}.txt"\
+                .format(save_dir_name, download_date.strftime('%Y%m%d'))) :
+            print("{2} ::: {0}SDO_filelist_{1}.txt is laready exist."\
+                .format(save_dir_name, download_date.strftime('%Y%m%d'), datetime.now()))
+    else : 
+
+        try : 
+            file_lists = SDO_utilities.SDO_image_list_to_filelist_1day(save_dir_name, download_date)
+            
+            '''
+            from bs4 import BeautifulSoup
+            from urllib.request import urlopen
+            file_lists = '#this file is created by guitar79@naver.com\n'
+            
+                #directory = download_date.strftime('%Y') + '/' + download_date.strftime('%m') + '/' + download_date.strftime('%d') + '/'
+                directory = download_date.strftime('%Y/%m/%d/')
+                url = site + directory
+                print ('*'*80)
+                print ('trying %s ' % url)
+                
+                # using BeutifulSoup for crowling
+                soup = BeautifulSoup(urlopen(url), "html.parser")
+                print('soup: {}'.format(soup))
+                
+                # 
+                table_list = soup.find_all('table')
+                print('table_list: {}'.format(table_list))
+                
+                #
+                file_list = table_list[0].find_all('a')
+                print('file_list', file_list)
+                
+                # select file fot downloading
+                for i in range(5, len(file_list)):
+                    filename = file_list[i].text
+                    file_lists += site + download_date.strftime('%Y/%m/%d/') + filename + '\n'
+            '''
+
+            print("file_lists: {}".format(file_lists))
+
+            with open("{0}SDO_filelist_{1}.txt".format(save_dir_name, download_date.strftime('%Y%m%d')), "w") as text_file:
+                text_file.write(file_lists)
+                SDO_utilities.write_log(log_file, "{2}: {0}SDO_filelist_{1}.txt is created".format(save_dir_name, download_date.strftime('%Y%m%d'), datetime.now()))
+                    
+        except Exception as err : 
+            SDO_utilities.write_log(err_log_file, "{1}: {0}\n".format(err, datetime.now()))
