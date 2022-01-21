@@ -23,10 +23,10 @@ site = 'https://sdo.gsfc.nasa.gov/assets/img/browse/'
 
 #this tpye of image will be added
 img_sizes = [4096, 3072, 2048, 1024, 512]
-chls = ['HMII', 'HMIB', 'HMIBC', 'HMIIC', 'HMIIF',
-        '4500', '0335', '1600', '1700', '0211', '0193'
-        '0131', '0171', '0304', '0094'
-        '211193171', '211193171n', '211193171rg']
+chls = ['0131', '0171', '0193', '0211',
+        '0304', '0094', '0335', '1600', '1700', '0211', '4500', 
+        'HMIB', 'HMIBC', 'HMID', 'HMII', 'HMIIC', 'HMIIF']
+        #'211193171', '211193171n', '211193171rg']
 
 save_base_dr = "../browse/"
 if not os.path.exists(save_base_dr):

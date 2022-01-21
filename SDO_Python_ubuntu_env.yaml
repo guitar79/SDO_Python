@@ -17,7 +17,9 @@ dependencies:
   - beautifulsoup4=4.10.0=pyh06a4308_0
   - binaryornot=0.4.4=pyhd3eb1b0_1
   - black=19.10b0=py_0
+  - blas=1.0=mkl
   - bleach=4.1.0=pyhd3eb1b0_0
+  - bottleneck=1.3.2=py39hdd57654_1
   - brotlipy=0.7.0=py39h27cfd23_1003
   - ca-certificates=2021.10.26=h06a4308_2
   - certifi=2021.10.8=py39h06a4308_2
@@ -49,6 +51,7 @@ dependencies:
   - importlib-metadata=4.8.2=py39h06a4308_0
   - importlib_metadata=4.8.2=hd3eb1b0_0
   - inflection=0.5.1=py39h06a4308_0
+  - intel-openmp=2021.4.0=h06a4308_3561
   - intervaltree=3.1.0=pyhd3eb1b0_0
   - ipykernel=6.4.1=py39h06a4308_1
   - ipython=7.29.0=py39hb070fc8_0
@@ -80,15 +83,23 @@ dependencies:
   - matplotlib-inline=0.1.2=pyhd3eb1b0_2
   - mccabe=0.6.1=py39h06a4308_1
   - mistune=0.8.4=py39h27cfd23_1000
+  - mkl=2021.4.0=h06a4308_640
+  - mkl-service=2.4.0=py39h7f8727e_0
+  - mkl_fft=1.3.1=py39hd3c417c_0
+  - mkl_random=1.2.2=py39h51133e4_0
   - mypy_extensions=0.4.3=py39h06a4308_1
   - nbclient=0.5.3=pyhd3eb1b0_0
   - nbconvert=6.3.0=py39h06a4308_0
   - nbformat=5.1.3=pyhd3eb1b0_0
   - ncurses=6.3=h7f8727e_2
   - nest-asyncio=1.5.1=pyhd3eb1b0_0
+  - numexpr=2.8.1=py39h6abb31d_0
+  - numpy=1.21.2=py39h20f2e39_0
+  - numpy-base=1.21.2=py39h79a1101_0
   - numpydoc=1.1.0=pyhd3eb1b0_1
   - openssl=1.1.1m=h7f8727e_0
   - packaging=21.3=pyhd3eb1b0_0
+  - pandas=1.3.5=py39h8c16a72_0
   - pandocfilters=1.4.3=py39h06a4308_1
   - parso=0.8.3=pyhd3eb1b0_0
   - pathspec=0.7.0=py_0
