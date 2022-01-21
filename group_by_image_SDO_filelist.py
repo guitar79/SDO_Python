@@ -34,8 +34,8 @@ for img_size in img_sizes :
     for chl in chls : 
         targets.append('{0}_{1}.jpg'.format(str(img_size), chl))
   
-filelist_dir_name = '../SDO_filelists/'
-save_dir_name = '../wget_by_suffix/'
+filelist_dir_name = '../SDO_filelists_by_date/'
+save_dir_name = '../SDO_filelists_by_chls/'
 if not os.path.exists(save_dir_name):
     os.makedirs(save_dir_name)
     print ('*'*80)
@@ -65,6 +65,7 @@ for SDO_filelist in SDO_filelists:
         url_lists.append(line)
     # close the file after reading the lines.
     f.close()
+
 #make Pandas Series from list
 ser = pd.Series(url_lists)
       
@@ -78,8 +79,8 @@ for target in targets :
             ser_target = ser[ser.str.contains(target)]
             ser_target.to_csv('{0}{1}.csv'.format(save_dir_name, target))
             SDO_utilities.write_log(log_file, '{2} : {0}{1}.txt is created.'\
-              .format(save_dir_name, target, datetime.now()))
+                .format(save_dir_name, target, datetime.now()))
                         
         except Exception as err : 
             SDO_utilities.write_log(err_log_file, '{2}: {0}, {1}'\
-                  .format(err, target, datetime.now()))
+                .format(err, target, datetime.now()))
