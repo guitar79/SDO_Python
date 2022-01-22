@@ -51,7 +51,7 @@ for target in targets :
     #target = targets[0]
     try : 
         SDO_filelists = sorted(glob(os.path.join('{}{}*.txt'.format(filelist_dir_name, target))))
-    
+                
         for SDO_filelist in SDO_filelists:   
             #SDO_filelist = SDO_filelists[0]
             
@@ -63,8 +63,7 @@ for target in targets :
             print("df: {}".format(df))
             
             #df['wget_sh'] = 'str ' + df['#this file is created by guitar79@naver.com'].astype(str)
-            
-            wget_sh = ""
+            wget_sh = ""    
             for index, value in df['#this file is created by guitar79@naver.com'].items():
                 fullname_el = value.split("/")
                 filename = fullname_el[-1]

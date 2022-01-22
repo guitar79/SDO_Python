@@ -48,18 +48,21 @@ for yr in range(2010,2022) :
     # yr = 2019
     try : 
         SDO_filelists = sorted(glob(os.path.join('{}SDO_filelist_{}*.txt'.format(filelist_dir_name, str(yr)))))
-    
+
+        # 빈 DataFrame 생성
+        df = pd.DataFrame()
+
         for SDO_filelist in SDO_filelists:   
             #SDO_filelist = SDO_filelists[0]
             #make Pandas DataFrame from file
-            df = pd.read_csv(SDO_filelist)
+            df_one = pd.read_csv(SDO_filelist)
+            df = df.append(df_one)
+        print("df: {}".format(df))
             
-            print("df: {}".format(df))
-            
-            for target in targets :
-                #target = targets[0]
-                df_target = df[df['#this file is created by guitar79@naver.com'].str.contains(target)]
-                df_target.to_csv("{0}{1}_lists_{2}.txt".format(save_dir_name, target, str(yr)))
+        for target in targets :
+            #target = targets[0]
+            df_target = df[df['#this file is created by guitar79@naver.com'].str.contains(target)]
+            df_target.to_csv("{0}{1}_lists_{2}.txt".format(save_dir_name, target, str(yr)))
         
     except Exception as err : 
         SDO_utilities.write_log(err_log_file, '{2}: {0}, {1}'\
