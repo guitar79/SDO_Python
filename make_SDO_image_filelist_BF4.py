@@ -21,7 +21,7 @@ print ("err_log_file: {}".format(err_log_file))
 site = 'https://sdo.gsfc.nasa.gov/assets/img/browse/'
    
 from dateutil.relativedelta import relativedelta
-p_start_date = datetime(2021, 1, 1) #convert startdate to date type
+p_start_date = datetime(2010, 5, 1) #convert startdate to date type
 p_end_date = datetime(2021, 12, 31)
 
 dates = [p_start_date]
@@ -46,7 +46,7 @@ for download_date in dates:
     #download_date = dates[0]
     n += 1
     print('#'*40,
-            "\n{2:.01f}%  ({0}/{1}) {3}".format(n, len(download_dates), (n/len(download_dates))*100, os.path.basename(__file__)))
+            "\n{2:.01f}%  ({0}/{1}) {3}".format(n, len(dates), (n/len(dates))*100, os.path.basename(__file__)))
     print ("Starting...   download_date: {}".format(download_date))
 
     if os.path.isfile("{0}SDO_filelist_{1}.txt"\
