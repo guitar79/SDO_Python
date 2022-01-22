@@ -32,7 +32,7 @@ while date1 < p_end_date :
 
 print(dates)
 
-save_dir_name = '../SDO_filelists/'
+save_dir_name = '../SDO_filelists_by_date/'
 if not os.path.exists('{0}'.format(save_dir_name)):
     os.makedirs('{0}'.format(save_dir_name))
     print ('*'*80)
@@ -40,9 +40,14 @@ if not os.path.exists('{0}'.format(save_dir_name)):
 else :
     print ('*'*80)
     print ('{0} is exist'.format(save_dir_name))
-        
+
+n = 0            
 for download_date in dates:
     #download_date = dates[0]
+    n += 1
+    print('#'*40,
+            "\n{2:.01f}%  ({0}/{1}) {3}".format(n, len(download_dates), (n/len(download_dates))*100, os.path.basename(__file__)))
+    print ("Starting...   download_date: {}".format(download_date))
 
     if os.path.isfile("{0}SDO_filelist_{1}.txt"\
                 .format(save_dir_name, download_date.strftime('%Y%m%d'))) :
