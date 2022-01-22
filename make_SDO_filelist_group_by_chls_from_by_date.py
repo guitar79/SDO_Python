@@ -58,12 +58,18 @@ for yr in range(2010,2022) :
             df_one = pd.read_csv(SDO_filelist)
             df = df.append(df_one)
         print("df: {}".format(df))
-            
+
+    except Exception as err:
+        SDO_utilities.write_log(err_log_file,
+                        '{2}: {0}, {1}'.format(err, target, datetime.now()))
+    try:
         for target in targets :
             #target = targets[0]
             df_target = df[df['#this file is created by guitar79@naver.com'].str.contains(target)]
             df_target.to_csv("{0}{1}_lists_{2}.txt".format(save_dir_name, target, str(yr)))
-        
+            SDO_utilities.write_log(err_log_file,
+                        "{0}{1}_lists_{2}.txt".format(save_dir_name, target, str(yr)))
+
     except Exception as err : 
-        SDO_utilities.write_log(err_log_file, '{2}: {0}, {1}'\
-            .format(err, target, datetime.now()))
+        SDO_utilities.write_log(err_log_file,
+                        '{2}: {0}, {1}'.format(err, target, datetime.now()))
