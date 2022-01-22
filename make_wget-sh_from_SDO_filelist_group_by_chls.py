@@ -36,7 +36,9 @@ for img_size in img_sizes :
         targets.append('{0}_{1}'.format(str(img_size), chl))
   
 filelist_dir_name = '../SDO_filelists_by_chls/'
-save_dir_name = '../wget_shby_chls/'
+save_dir_name = '../wget_sh_by_chls/'
+save_base_dr = "../browse/"
+
 if not os.path.exists(save_dir_name):
     os.makedirs(save_dir_name)
     print ('*'*80)
@@ -45,22 +47,40 @@ else :
     print ('*'*80)
     print ('{0} is already exist.'.format(save_dir_name))
                           
-for yr in range(2010,2022) :
-    # yr = 2019
+for target in targets :
+    #target = targets[0]
     try : 
-        SDO_filelists = sorted(glob(os.path.join('{}SDO_filelist_{}*.txt'.format(filelist_dir_name, str(yr)))))
+        SDO_filelists = sorted(glob(os.path.join('{}{}*.txt'.format(filelist_dir_name, target))))
     
         for SDO_filelist in SDO_filelists:   
             #SDO_filelist = SDO_filelists[0]
+            
+            SDO_fullname_el = SDO_filelist.split("/")
+            SDO_filename = SDO_fullname_el[-1]
+            
             #make Pandas DataFrame from file
             df = pd.read_csv(SDO_filelist)
-            
             print("df: {}".format(df))
             
-            for target in targets :
-                #target = targets[0]
-                df_target = df[df['#this file is created by guitar79@naver.com'].str.contains(target)]
-                df_target.to_csv("{0}{1}_lists_{2}.txt".format(save_dir_name, target, str(yr)))
+            #df['wget_sh'] = 'str ' + df['#this file is created by guitar79@naver.com'].astype(str)
+            
+            wget_sh = ""
+            for index, value in df['#this file is created by guitar79@naver.com'].items():
+                fullname_el = value.split("/")
+                filename = fullname_el[-1]
+                new_foldername = "{}{}/{}/{}/".format(save_base_dr, filename[0:4], 
+                                                      filename[4:6], filename[6:8])
+                if not os.path.exists(new_foldername):
+                    os.makedirs(new_foldername)
+                    print ('{} is created...'.format(new_foldername))
+                    
+                #wget -T 300 -t 1 -r -nd -np -l 1 -N --no-if-modified-since -P ../4096_HMIB/ https://sdo.gsfc.nasa.gov/assets/img/browse/2010/06/18/20100618_032603_4096_HMIB.jpg
+                wget_sh += "wget -T 300 -t 1 -r -nd -np -l 1 -N --no-if-modified-since -P "
+                wget_sh += "{} {}\n".format(new_foldername, value)
+            
+            with open("{}{}_wget.sh".format(save_dir_name, SDO_filename[:-4]), "w") as sh_file:
+                sh_file.write(wget_sh)
+                SDO_utilities.write_log(log_file, "{}{}_wget.sh is created...".format(save_dir_name, SDO_filename[:-4]))
         
     except Exception as err : 
         SDO_utilities.write_log(err_log_file, '{2}: {0}, {1}'\
