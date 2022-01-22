@@ -72,8 +72,9 @@ for target in targets :
                 if not os.path.exists(new_foldername):
                     os.makedirs(new_foldername)
                     print ('{} is created...'.format(new_foldername))
-                    
-                #wget -T 300 -t 1 -r -nd -np -l 1 -N --no-if-modified-since -P ../4096_HMIB/ https://sdo.gsfc.nasa.gov/assets/img/browse/2010/06/18/20100618_032603_4096_HMIB.jpg
+                
+                #[ -f "../browse/2021/01/01/20210101_000000_4096_HMIIF.jpg" ] && echo "../browse/2021/01/01/20210101_000000_4096_HMIIF.jpg exists." || wget -T 300 -t 1 -r -nd -np -l 1 -N --no-if-modified-since -P ../browse/2021/01/01/ https://sdo.gsfc.nasa.gov/assets/img/browse/2021/01/01/20210101_000000_4096_HMIIF.jpg
+                wget_sh += '[ -f "{0}{1}" ] && echo "{0}{1} exists." || '.format(new_foldername, filename)
                 wget_sh += "wget -T 300 -t 1 -r -nd -np -l 1 -N --no-if-modified-since -P "
                 wget_sh += "{} {}\n".format(new_foldername, value)
             
