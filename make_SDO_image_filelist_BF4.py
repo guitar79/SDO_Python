@@ -32,7 +32,7 @@ while date1 < p_end_date :
 
 print(dates)
 
-save_dir_name = '../SDO_filelists_by_date/'
+save_dir_name = './SDO_filelists_by_date/'
 if not os.path.exists('{0}'.format(save_dir_name)):
     os.makedirs('{0}'.format(save_dir_name))
     print ('*'*80)
