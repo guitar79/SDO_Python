@@ -34,8 +34,8 @@ for img_size in img_sizes :
     for chl in chls : 
         targets.append('{0}_{1}'.format(str(img_size), chl))
   
-filelist_dir_name = '../SDO_filelists_by_date/'
-save_dir_name = '../SDO_filelists_by_chls/'
+filelist_dir_name = 'SDO_filelists_by_date/'
+save_dir_name = 'SDO_filelists_by_chls/'
 if not os.path.exists(save_dir_name):
     os.makedirs(save_dir_name)
     print ('*'*80)

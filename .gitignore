@@ -1,2 +1,4 @@
 ## log files :
 **/*.log
+
+SDO_filelists_by_chls/*.*
