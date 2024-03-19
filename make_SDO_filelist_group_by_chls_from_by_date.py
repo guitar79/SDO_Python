@@ -44,7 +44,7 @@ else :
     print ('*'*80)
     print ('{0} is already exist.'.format(save_dir_name))
                           
-for yr in range(2010,2022) :
+for yr in range(2022,2024) :
     # yr = 2019
     try : 
         SDO_filelists = sorted(glob(os.path.join('{}SDO_filelist_{}*.txt'.format(filelist_dir_name, str(yr)))))
