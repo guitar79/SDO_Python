@@ -11,7 +11,7 @@ from glob import glob
 from datetime import datetime
 import pandas as pd
 import os
-import SDO_utilities
+import _SDO_utilities
 
 log_dir = "logs/"
 log_file = "{}{}.log".format(log_dir, os.path.basename(__file__)[:-3])
@@ -69,7 +69,7 @@ for SDO_filelist in SDO_filelists:
                     print ('{0} is created.'.format(save_dir_name))
                 
                 if target == '{0}_{1}'.format(filename_el[-2], filename_el[-1]) \
-                    and int(SDO_utilities.filename_to_hour(filename).strftime('%H')) in request_hour :
+                    and int(_SDO_utilities.filename_to_hour(filename).strftime('%H')) in request_hour :
                 
                     if os.path.exists('%s/%s' % (save_dir_name, filename)):
                         print ('*'*40)
@@ -80,11 +80,11 @@ for SDO_filelist in SDO_filelists:
                         try : 
                             print ('Trying %s' % filename)
                             urllib.request.urlretrieve(url_list, '{0}{1}'.format(save_dir_name, filename))
-                            SDO_utilities.write_log(log_file, "{2}: {0}{1} is downloaded.".format(save_dir_name, filename, datetime.now()))
+                            _SDO_utilities.write_log(log_file, "{2}: {0}{1} is downloaded.".format(save_dir_name, filename, datetime.now()))
                             print ('Downloading' + filename)
                             
                         except Exception as err : 
-                            SDO_utilities.write_log(err_log_file, "{2}: {0}, {1}\n".format(err, url_list, datetime.now()))
+                            _SDO_utilities.write_log(err_log_file, "{2}: {0}, {1}\n".format(err, url_list, datetime.now()))
                             
                 else:
                     print ('Skipping ' + filename)

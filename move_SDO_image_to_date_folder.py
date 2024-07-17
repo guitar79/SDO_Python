@@ -10,7 +10,7 @@
 from datetime import datetime
 import os
 import shutil 
-import SDO_utilities
+import _SDO_utilities
 
 log_dir = "logs/"
 log_file = "{}{}.log".format(log_dir, os.path.basename(__file__)[:-3])
@@ -36,7 +36,7 @@ if not os.path.exists(save_base_dr):
 for dir in chls :
     #dir = chls[0]
     base_dr = "../4096_{}/".format(dir)
-    fullnames = SDO_utilities.getFullnameListOfallFiles(base_dr)
+    fullnames = _SDO_utilities.getFullnameListOfallFiles(base_dr)
     
     n = 0    
     for fullname in fullnames :
@@ -56,7 +56,7 @@ for dir in chls :
         try : 
         
             if os.path.exists('{0}{1}'.format(new_foldername, filename)):
-                SDO_utilities.write_log(log_file, 
+                _SDO_utilities.write_log(log_file, 
                      '{0}{1} is already exist...'.format(new_foldername, filename))
             else :
                 shutil.move(r"{}".format(fullname), r"{}{}".format(new_foldername, filename))
@@ -64,5 +64,5 @@ for dir in chls :
                 
         except Exception as err : 
             print("X"*60)
-            SDO_utilities.write_log(err_log_file, \
+            _SDO_utilities.write_log(err_log_file, \
                  '{2} ::: {0} with move {1} '.format(err, fullname, datetime.now()))

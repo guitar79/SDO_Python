@@ -11,7 +11,7 @@ from glob import glob
 from datetime import datetime
 import pandas as pd
 import os
-import SDO_utilities
+import _SDO_utilities
 
 log_dir = "logs/"
 log_file = "{}{}.log".format(log_dir, os.path.basename(__file__)[:-3])
@@ -80,9 +80,9 @@ for target in targets :
             
             with open("{}{}_wget.sh".format(save_dir_name, SDO_filename[:-4]), "w") as sh_file:
                 sh_file.write(wget_sh)
-                SDO_utilities.write_log(log_file,
+                _SDO_utilities.write_log(log_file,
                                         "{}{}_wget.sh is created...".format(save_dir_name, SDO_filename[:-4]))
         
     except Exception as err : 
-        SDO_utilities.write_log(err_log_file,
+        _SDO_utilities.write_log(err_log_file,
                                 "{2}: {0}, {1}".format(err, target, datetime.now()))

@@ -9,7 +9,7 @@
 
 import os
 from datetime import datetime
-import SDO_utilities
+import _SDO_utilities
 
 log_dir = "logs/"
 log_file = "{}{}.log".format(log_dir, os.path.basename(__file__)[:-3])
@@ -21,8 +21,8 @@ print ("err_log_file: {}".format(err_log_file))
 site = 'https://sdo.gsfc.nasa.gov/assets/img/browse/'
    
 from dateutil.relativedelta import relativedelta
-p_start_date = datetime(2010, 5, 1) #convert startdate to date type
-p_end_date = datetime(2021, 12, 31)
+p_start_date = datetime(2022, 1, 1) #convert startdate to date type
+p_end_date = datetime(2024, 2, 29)
 
 dates = [p_start_date]
 date1 = p_start_date
@@ -56,7 +56,7 @@ for download_date in dates:
     else : 
 
         try : 
-            file_lists = SDO_utilities.SDO_image_list_to_filelist_1day(save_dir_name, download_date)
+            file_lists = _SDO_utilities.SDO_image_list_to_filelist_1day(save_dir_name, download_date)
             
             '''
             from bs4 import BeautifulSoup
@@ -91,7 +91,7 @@ for download_date in dates:
 
             with open("{0}SDO_filelist_{1}.txt".format(save_dir_name, download_date.strftime('%Y%m%d')), "w") as text_file:
                 text_file.write(file_lists)
-                SDO_utilities.write_log(log_file, "{2}: {0}SDO_filelist_{1}.txt is created".format(save_dir_name, download_date.strftime('%Y%m%d'), datetime.now()))
+                _SDO_utilities.write_log(log_file, "{2}: {0}SDO_filelist_{1}.txt is created".format(save_dir_name, download_date.strftime('%Y%m%d'), datetime.now()))
                     
         except Exception as err : 
-            SDO_utilities.write_log(err_log_file, "{1}: {0}\n".format(err, datetime.now()))
+            _SDO_utilities.write_log(err_log_file, "{1}: {0}\n".format(err, datetime.now()))
